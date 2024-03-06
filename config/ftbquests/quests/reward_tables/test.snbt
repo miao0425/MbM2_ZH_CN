@@ -1,0 +1,19 @@
+{
+	id: "4E6EF95B1DE874D6"
+	order_index: 0
+	title: "Iron Furnace"
+	loot_size: 1
+	rewards: [
+		{ item: "ironfurnaces:upgrade_iron" }
+		{ item: "ironfurnaces:iron_furnace" }
+	]
+	loot_crate: {
+		color: 16777215
+		string_id: "iron_furnace"
+		drops: {
+			passive: 0
+			boss: 0
+			monster: 0
+		}
+	}
+}

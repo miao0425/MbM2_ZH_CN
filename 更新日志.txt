@@ -1,0 +1,313 @@
+20242222
+material: 'lumium',
+ore_name: '流明',
++ 'base_ingot', 'base_dust'
+
+material: 'signalum',
+ore_name: '信素',
++ 'base_ingot', 'base_dust'
+
+material: 'enderium',
+ore_name: '末影',
++  'base_ingot', 'base_dust'
+
+20240222
+material: 'drenched_iron',
+ore_name: '烙铁',
++ dust
+
+20240125
+'material': 'cobalt',
+ore_name: '钴',
+- model_robot_arm 
++ plating
+
+'material': 'titanium',
+ore_name: '钛',
++ bolt
+
+'material': 'ostrum',
+ore_name: '紫金',
+- plating
+
+'material': 'pewter',
+ore_name: '白镴',
+= dust
+
+material: 'energetic_alloy',
+ore_name: '充能合金',
++ bolt
+
+material: 'nethersteel',
+ore_name: '下界钢',
++ plate
++ plating
+
+'material': 'advanced_battery_alloy',
+ore_name: '高级能源合金',
++ ingot
++ nugget
++ dust
++ plate
++ plating
+
+material: 'exoskeleton_composit',
+ore_name: '外骨骼',
++ ingot
++ nugget
++ dust
++ plate
++ plating
++ reinforced_plating
++ hull_panel
+
+material: 'imortite',
+ore_name: '不朽石',
++ ingot
+
+material: 'potentium',
+ore_name: '蕴能素',
++ ingot
+
+material: 'kharaxium',
+ore_name: '哈克斯',
++ ingot
+
+material: 'vincyte',
+ore_name: '文赛特',
++ ingot
+
+material: 'densite',
+ore_name: '密度',
++ ingot
+
+material: 'jimmium',
+ore_name: '吉姆',
++ ingot
+
+material: 'tier_2_mechanical_alloy',
+ore_name: '2级机械合金',
++ ingot
++ nugget
++ dust
++ plate
++ gear
++ interlocking_component
++ rod
++ model_robot_arm
++ wire
+
+material: 'tier_2_electrical_alloy',
+ore_name: '2级电力合金',
++ ingot
++ nugget
++ dust
++ plate
++ wire
++ model_spool
++ model_wire_coil
++ sheet
++ model_dual_coil
+
+material: 'tier_2_structural_alloy',
+ore_name: '2级结构合金',
++ sheetmetal
+
+material: 'tier_3_structural_alloy',
+ore_name: '3级结构合金',
++ sheetmetal
+
+'heated_vinteum_block' 加热器
+'transmuted_casing' 嬗变外壳
+
+20231127
+添加
+material: 'aluminum',
+		ore_name: '铝',
+                'sheet'
+
+material: 'magnesium',
+		ore_name: '镁',
+                'plating'
+
+material: 'steel',
+		ore_name: '钢',
+                'sheet'
+
+material: 'lunar_alloy',
+		ore_name: '明月合金',
+                'ingot', 'nugget', 'dust', 'plate', 'plating'
+
+"item.kubejs.arcane_sand": "奥术沙",
+
+
+20231019
+删除：
+
+添加：
+material: 'titanium',
+		ore_name: '钛',
+        'sheet'
+
+material: 'orichalcum',
+		ore_name: '山铜',
+        'rod', 'ring', 'sprocket'
+        fluid
+
+material: 'enderium',
+        ore_name: '末影',
+        'hull_panel'
+
+material: 'tier_1_magical_alloy',
+        ore_name: '1级魔法合金',
+        'rod'
+        
+修改：
+
+20231007
+删除：
+
+添加：
+_master_material_list.js
+desh 戴斯
+'wire', 'model_spool', 'model_wire_coil'
+'coil'
+
+tungsten 钨
+'wire', 'model_spool', 'model_wire_coil'
+'coil'
+
+adamantium  精金
+'plate', 'gear', 'rod', 'wire', 'model_spool', 'model_wire_coil'
+'coil'
+ 
+lithium 锂
+'plating'
+
+white_alloy 镁银合金
+'wire', 'model_spool', 'model_wire_coil'
+'coil'
+
+tier_2_structural_alloy 2级结构合金
+'ingot', 'nugget', 'dust', 'plate', 'rod', 'plating', 'reinforced_plating', 'hull_panel', 'bolt'
+'storage_block', 'casing', 'scaffolding', 'hull_casing', 'frame_box'
+fluid
+
+tier_3_structural_alloy 3级结构合金
+'ingot', 'nugget', 'dust', 'plate', 'rod', 'plating', 'reinforced_plating', 'hull_panel', 'bolt'
+'storage_block', 'casing', 'scaffolding', 'hull_casing', 'frame_box'
+fluid
+
+更改：
+material: 'imortite',
+ore_name: '不朽石',
+material: 'potentium',
+ore_name: '蕴能素',
+material: 'kharaxium',
+ore_name: '哈克斯',
+material: 'thermogenic',
+ore_name: '致热',
+material: 'vincyte',
+ore_name: '文赛特',
+material: 'densite',
+ore_name: '密度',
+material: 'jimmium',
+ore_name: '吉姆',
+material: 'thermolytic',
+ore_name: '热解',
+
+
+20230904
+删除
+	"fluid.kubejs.gemstone_catalyst_mixture": "液态宝石混合物",
+	"item.kubejs.fine_thermogenic_dust": "细小的致热粉",
+	"item.kubejs.fine_thermolytic_dust": "细小的Thermolytic粉尘",
+    tier_1_magical_alloy
+    sheet
+    thermogenic
+    crystal
+    thermolytic
+    crystal
+
+
+
+添加
+new_item
+"item.kubejs.fine_thermogenic_blend_dust": "细致热矿砂",
+"item.kubejs.thermogenic_blend_chunk": "致热混合团块",
+"item.kubejs.thermogenic_blend_crystal": "致热混合晶簇",
+"item.kubejs.fine_thermolytic_blend_dust": "细Thermolytic矿砂",
+"item.kubejs.thermolytic_blend_chunk": "Thermolytic混合团块",
+"item.kubejs.thermolytic_blend_crystal": "hermolytic混合晶簇",
+"item.kubejs.catalyst_basic": "基础矿石催化剂",
+"item.kubejs.catalyst_gem": "水晶矿催化剂",
+"item.kubejs.catalyst_magic": "魔法矿石催化剂",
+"item.kubejs.catalyst_empty": "空的催化剂瓶",
+
+energetic_alloy
+frame_box
+energized_steel
+sheet dust
+compressed_steel
+dust
+tier_1_mechanical_alloy
+wire
+tier_1_magical_alloy
+sproket
+tier_1_structural_alloy
+bolt
+
+crystal_slag  炉渣水晶 
+
+
+new_fluid
+"fluid.kubejs.basic_catalyst_mixture": "基础催化剂混合物",
+"fluid.kubejs.crystal_catalyst_mixture": "晶体催化剂混合物",
+"fluid.kubejs.magic_catalyst_mixture": "魔力催化剂混合物",
+"fluid.kubejs.liquid_mana": "液态Mana",
+"item.kubejs.basic_catalyst_mixture": "基础催化剂混合物桶",
+"item.kubejs.crystal_catalyst_mixture": "晶体催化剂混合物桶",
+"item.kubejs.magic_catalyst_mixture": "魔力催化剂混合物桶",
+"item.kubejs.liquid_mana": "液态Mana桶",
+
+
+更改
+"item.kubejs.solar_chip_purple": "戴森追踪芯片(4096)", → "item.kubejs.solar_chip_purple": "戴森追踪芯片(512)",
+"item.kubejs.logic_component": "逻辑元件", → "item.kubejs.ai_chip": "逻辑元件",
+
+
+
+
+20230822
+删除：
+铁锤子
+锡锤子
+铜锤子
+铅锤子
+银锤子
+镍锤子
+钴锤子
+钛锤子
+青铜锤子
+康铜锤子
+琥珀金锤子
+殷钢锤子
+黄铜锤子
+钢锤子
+大马士革钢锤子
+
+添加：
+铁片
+铜片
+铅片
+银片
+镍片
+青铜片
+康铜片
+殷钢片
+白镴片
+压缩钢片
+
+更改：
+storage_block命名
+存储方块 ->  金属块
