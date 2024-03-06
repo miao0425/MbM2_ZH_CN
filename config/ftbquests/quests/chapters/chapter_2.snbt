@@ -631,6 +631,7 @@
 			y: 11.0d
 			subtitle: "{chapter.1.quest.20.subtitle}"
 			dependencies: ["760223888ADD58B0"]
+			min_required_tasks: 5
 			id: "23D386A39C0311F4"
 			tasks: [
 				{
@@ -664,6 +665,11 @@
 							value: "tconstruct:casts/single_use/blank"
 						}
 					}
+				}
+				{
+					id: "2891BE9DBBFA0060"
+					type: "item"
+					item: "create:brass_ingot"
 				}
 			]
 			rewards: [{

@@ -1,3 +1,47 @@
+20240307
+material: 'cadmium',
+ore_name: '镉',
++ 'ingot'
+
+material: 'pewter',
+ore_name: '白镴',
++ 'ingot', 'nugget', 'storage_block'
+
+material: 'duralumin',
+ore_name: '硬铝',
++ 'ingot'
+
+material: 'tier_1_magical_alloy',
+ore_name: '1级魔法合金',
++ 'plate'
+
+material: 'tier_1_structural_alloy',
+ore_name: '1级结构合金',
++ 'sheet', 'component',
+
+material: 'tier_2_structural_alloy',
+ore_name: '2级结构合金',
++ 'sheet', 'component',
+
+material: 'tier_3_structural_alloy',
+ore_name: '3级结构合金',
++ 'sheet', 'component',
+
+material: 'terrasteel',
+ore_name: '泰拉钢',
++ fluid_id: 'kubejs:molten_terrasteel',
+
+material: 'elementium',
+ore_name: '源质钢',
+fluid_id: 'kubejs:molten_elementium',
+
+- material: 'infused_iron',
+- ore_name: '灌注铁',
++ material: 'infused_mithril',
++ ore_name: '灌注秘银',
++ fluid_id: 'kubejs:molten_infused_mithril',
+
+
 20242222
 material: 'lumium',
 ore_name: '流明',

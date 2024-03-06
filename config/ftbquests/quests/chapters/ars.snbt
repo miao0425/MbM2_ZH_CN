@@ -11,7 +11,7 @@
 		{
 			x: -35.0d
 			y: 0.0d
-			subtitle: "用法术进行思考"
+			subtitle: "感谢 JeanRdS 提供这个任务书页面！"
 			description: ["法术书是一个功能强大的工具，几乎可以不计成本地完成很多事情。要创建法术，可以按下开书键（默认：C），然后选择法术形式、法术效果。也可以染色。"]
 			id: "01AB47D4DCA342A5"
 			tasks: [{
@@ -68,6 +68,7 @@
 			y: 0.0d
 			subtitle: "制作材料"
 			dependencies: ["01AB47D4DCA342A5"]
+			progression_mode: "flexible"
 			id: "6511A3EE5F483172"
 			tasks: [{
 				id: "6C6C2C3F988AFE72"
@@ -124,7 +125,7 @@
 		}
 		{
 			x: -29.0d
-			y: 1.5d
+			y: -3.0d
 			subtitle: "肉和甜菜"
 			description: ["可以从动物的繁殖、死亡中生成魔源，并使动物快速生长"]
 			dependencies: ["30CD0A7C0B37EAD4"]
@@ -143,7 +144,7 @@
 		}
 		{
 			x: -29.0d
-			y: -3.0d
+			y: 1.5d
 			subtitle: "真菌，就在我们中间"
 			description: ["可从掉落的食物（基座也可以）中根据营养值生产魔源。如果食物是由魔源浆果制成的，还能获得额外奖励。使下面的泥土/草变成菌丝，并在可能的情况下长出蘑菇"]
 			dependencies: ["30CD0A7C0B37EAD4"]
@@ -566,7 +567,7 @@
 			shape: "circle"
 			subtitle: "饿了"
 			description: ["能补充魔力并为生命源泉提供燃料的食物"]
-			dependencies: ["5604AD3AE0C4EC33"]
+			dependencies: ["304204395C17131A"]
 			hide: true
 			id: "4799D00A8E18E8D3"
 			tasks: [{

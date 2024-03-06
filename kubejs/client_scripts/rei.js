@@ -79,7 +79,7 @@ onEvent('rei.add.items', event => {
 		'thermal:sapphire_dust',
 		'thermal:sapphire_gear',
 		'minecraft:structure_block',
-		'feruchemy:metal_mind',
+		//'feruchemy:metal_mind',
 	]
 
 	addItems.forEach(item => {
@@ -188,36 +188,43 @@ onEvent('rei.group', event => {
 		'tconstruct:crossbow',
 		'tconstruct:longbow',
 		'sophisticatedstorage:chest',
+		'sophisticatedstorage:copper_chest',
 		'sophisticatedstorage:iron_chest',
 		'sophisticatedstorage:gold_chest',
 		'sophisticatedstorage:diamond_chest',
 		'sophisticatedstorage:netherite_chest',
 		'sophisticatedstorage:shulker_box',
+		'sophisticatedstorage:copper_shulker_box',
 		'sophisticatedstorage:iron_shulker_box',
 		'sophisticatedstorage:gold_shulker_box',
 		'sophisticatedstorage:diamond_shulker_box',
 		'sophisticatedstorage:netherite_shulker_box',
 		'sophisticatedstorage:barrel',
+		'sophisticatedstorage:copper_barrel',
 		'sophisticatedstorage:iron_barrel',
 		'sophisticatedstorage:gold_barrel',
 		'sophisticatedstorage:diamond_barrel',
 		'sophisticatedstorage:netherite_barrel',
 		'sophisticatedstorage:limited_barrel_1',
+		'sophisticatedstorage:limited_copper_barrel_1',
 		'sophisticatedstorage:limited_iron_barrel_1',
 		'sophisticatedstorage:limited_gold_barrel_1',
 		'sophisticatedstorage:limited_diamond_barrel_1',
 		'sophisticatedstorage:limited_netherite_barrel_1',
 		'sophisticatedstorage:limited_barrel_2',
+		'sophisticatedstorage:limited_copper_barrel_2',
 		'sophisticatedstorage:limited_iron_barrel_2',
 		'sophisticatedstorage:limited_gold_barrel_2',
 		'sophisticatedstorage:limited_diamond_barrel_2',
 		'sophisticatedstorage:limited_netherite_barrel_2',
 		'sophisticatedstorage:limited_barrel_3',
+		'sophisticatedstorage:limited_copper_barrel_3',
 		'sophisticatedstorage:limited_iron_barrel_3',
 		'sophisticatedstorage:limited_gold_barrel_3',
 		'sophisticatedstorage:limited_diamond_barrel_3',
 		'sophisticatedstorage:limited_netherite_barrel_3',
 		'sophisticatedstorage:limited_barrel_4',
+		'sophisticatedstorage:limited_copper_barrel_4',
 		'sophisticatedstorage:limited_iron_barrel_4',
 		'sophisticatedstorage:limited_gold_barrel_4',
 		'sophisticatedstorage:limited_diamond_barrel_4',
@@ -229,6 +236,7 @@ onEvent('rei.group', event => {
 		'industrialforegoing:infinity_saw',
 		'industrialforegoing:infinity_hammer',
 		'industrialforegoing:infinity_trident',
+		'cb_microblock:microblock' /*This needs to be named!*/,
 	]
 
 	useNbt.forEach(id => {
@@ -237,6 +245,7 @@ onEvent('rei.group', event => {
 		event.groupSameItem(`mbm2:rei_groups/${namespace}/${path}`, item.getName(), item)
 	})
 
+	/*
 	event.groupItems(`mbm2:rei_groups/wickerwood_constructs`, '条缕木构造体部件', [
 		/mna:constructs.*_wickerwood/,
 	])
@@ -258,6 +267,22 @@ onEvent('rei.group', event => {
 	event.groupItems(`mbm2:rei_groups/obsidian_constructs`, '黑曜石构造体部件', [
 		/mna:constructs.*_obsidian/,
 	])
+	*/
+
+	/*
+	'cb_microblock:microblock', '{factory_id:0,mat:"minecraft:red_concrete",size:1}'
+	'cb_microblock:microblock', '{factory_id:0,mat:"minecraft:basalt//axis.y",size:2}',
+	'cb_microblock:microblock', '{factory_id:0,mat:"minecraft:jungle_log//axis.y",size:4}',
+	'cb_microblock:microblock', '{factory_id:1,mat:"minecraft:spruce_log//axis.y",size:1}',
+	'cb_microblock:microblock', '{factory_id:1,mat:"minecraft:brown_wool",size:2}',
+	'cb_microblock:microblock', '{factory_id:1,mat:"minecraft:orange_glazed_terracotta//facing.north",size:4}',
+	'cb_microblock:microblock', '{factory_id:3,mat:"minecraft:acacia_log//axis.y",size:1}',
+	'cb_microblock:microblock', '{factory_id:3,mat:"minecraft:cobblestone",size:2}',
+	'cb_microblock:microblock', '{factory_id:3,mat:"minecraft:red_sandstone",size:4}',
+	'cb_microblock:microblock', '{factory_id:2,mat:"minecraft:diorite",size:1}',
+	'cb_microblock:microblock', '{factory_id:2,mat:"minecraft:stripped_birch_log//axis.y",size:2}',
+	'cb_microblock:microblock', '{factory_id:2,mat:"minecraft:jungle_leaves//distance.7/persistent.false",size:4}',
+	*/
 
 	global.newMaterialParts.forEach(item => {
 		if (item.ore) {
