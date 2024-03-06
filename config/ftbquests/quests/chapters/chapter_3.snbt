@@ -802,62 +802,6 @@
 			}]
 		}
 		{
-			title: "自动制作！"
-			x: 7.0d
-			y: 10.5d
-			description: [
-				"您需要通过添加一个一定大小的存储盘来转换制作单元"
-				""
-				"在解锁钛金版之前，您只能使用 16 个通道"
-			]
-			dependencies: [
-				"059414648F84FC52"
-				"338A1AE116F1A652"
-			]
-			id: "6C4354CB6E54A96A"
-			tasks: [
-				{
-					id: "1E3C92E9821492D6"
-					type: "item"
-					item: "ae2:pattern_provider"
-				}
-				{
-					id: "47318DF267287C40"
-					type: "item"
-					item: "ae2:blank_pattern"
-				}
-				{
-					id: "321BF9922838BCE6"
-					type: "item"
-					item: "ae2:pattern_encoding_terminal"
-				}
-				{
-					id: "05BA416531FD19FA"
-					type: "item"
-					item: "ae2:pattern_access_terminal"
-				}
-				{
-					id: "0D140FFB2F8889D2"
-					type: "item"
-					item: "ae2:crafting_unit"
-				}
-			]
-			rewards: [
-				{
-					id: "24DDF521273A63F2"
-					type: "random"
-					exclude_from_claim_all: true
-					table_id: 824098445478849879L
-				}
-				{
-					id: "71914634C3327663"
-					type: "item"
-					item: "ae2:blank_pattern"
-					count: 8
-				}
-			]
-		}
-		{
 			title: "基本数字存储"
 			x: 5.5d
 			y: 10.5d
@@ -962,7 +906,7 @@
 		}
 		{
 			title: "水晶种子"
-			x: 8.5d
+			x: 7.0d
 			y: 10.5d
 			description: ["将石英和福鲁伊克斯翻倍！"]
 			dependencies: ["338A1AE116F1A652"]

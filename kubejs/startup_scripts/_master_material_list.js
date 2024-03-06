@@ -935,6 +935,19 @@ global.newMaterialParts = [
 		fluid: 'thick',
 		fluid_id: 'kubejs:molten_reinforced_electrum',
 	},
+	{
+		material: 'swift_alloy',
+		ore_name: '迅金',
+		color: 0xf2c45a,
+		type: 'alloy',
+		tier: 2,
+		itemParts: ['dust', 'plate', 'gear', 'rod'],
+		blockParts: [],
+		//'fluid_id': 'tconstruct:molten_manyullyn',
+		//'amount': 4,
+		//'dust_input': ['3x #forge:dusts/cobalt','#forge:ingots/netherite_scrap'],
+		//'ingot_input': ['3x #forge:ingots/cobalt','#forge:ingots/netherite_scrap'],
+	},
 	/////////////// Tier 3 Alloys: Arc Furnace or chapter 3 /////////////////////////////
 
 	{
@@ -1174,19 +1187,6 @@ global.newMaterialParts = [
 		],
 		fluid: 'thick',
 		fluid_id: 'kubejs:molten_titanite',
-	},
-	{
-		material: 'swift_alloy',
-		ore_name: '迅金',
-		color: 0xf2c45a,
-		type: 'alloy',
-		tier: 3,
-		itemParts: ['dust', 'plate', 'gear', 'rod'],
-		blockParts: [],
-		//'fluid_id': 'tconstruct:molten_manyullyn',
-		//'amount': 4,
-		//'dust_input': ['3x #forge:dusts/cobalt','#forge:ingots/netherite_scrap'],
-		//'ingot_input': ['3x #forge:ingots/cobalt','#forge:ingots/netherite_scrap'],
 	},
 
 	/////////////// Tier 4 Alloys Mixer Only or chapter 4 /////////////////////////////

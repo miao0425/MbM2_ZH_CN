@@ -1,4 +1,9 @@
-20240307
+20240307 0.7.1
+material: 'swift_alloy',
+ore_name: '迅金',
+tier: 3, → tier: 2,
+
+20240307 0.7.0 + 0.7.0a
 material: 'cadmium',
 ore_name: '镉',
 + 'ingot'
