@@ -240,6 +240,8 @@
 	"item.kubejs.tier_2_structural_alloy_rod": "2级结构合金棒",
 	"item.kubejs.tier_3_structural_alloy_rod": "3级结构合金棒",
 	"item.kubejs.tier_2_mechanical_alloy_rod": "2级机械合金棒",
+	"item.kubejs.orichalcum_rod": "山铜棒",
+	"item.kubejs.tier_1_magical_alloy_rod": "1级魔法合金棒",
 
 	"#wire": "线",
 	"item.kubejs.tin_wire": "锡线",
@@ -266,6 +268,7 @@
 	"item.kubejs.white_alloy_wire": "镁银合金线",
 	"item.kubejs.tier_2_mechanical_alloy_wire": "2级机械合金线",
 	"item.kubejs.tier_2_electrical_alloy_wire": "2级电力合金线",
+	"item.kubejs.adamantium_wire": "精金线",
 
 	"#interlocking_component": "齿轮组",
 	"item.kubejs.copper_interlocking_component": "铜齿轮组",
@@ -509,6 +512,8 @@
 	"item.kubejs.tier_2_mechanical_alloy_ingot": "2级机械合金锭",
 	"item.kubejs.tier_2_electrical_alloy_ingot": "2级电力合金锭",
 	"item.kubejs.cadmium_ingot": "镉锭",
+	"item.kubejs.duralumin_ingot": "硬铝锭",
+	"item.kubejs.exoskeleton_composit_ingot": "外骨骼锭",
 
 	"#dust": "金属粉",
 	"item.kubejs.arcanite_dust": "奥金粉",
@@ -593,6 +598,7 @@
 	"item.kubejs.tier_2_mechanical_alloy_dust": "2级机械合金粉",
 	"item.kubejs.tier_2_electrical_alloy_dust": "2级电力合金粉",
 	"item.kubejs.drenched_iron_dust": "2级电力合金粉",
+	"item.kubejs.exoskeleton_composit_dust": "外骨骼粉",
 
 	"item.kubejs.aerotheum_dust": "空气粉",
 	"item.kubejs.cryotheum_dust": "凛冰粉",
@@ -631,7 +637,7 @@
 	"item.kubejs.desh_wire_coil": "戴斯中压线圈",
 	"item.kubejs.tungsten_wire_coil": "钨中压线圈",
 	"item.kubejs.adamantium_wire_coil": "精金中压线圈",
-	"item.kubejs.cwhite_alloy_wire_coil": "镁银合金中压线圈",
+	"item.kubejs.white_alloy_wire_coil": "镁银合金中压线圈",
 
 	"#reinforced_plating": "强化镀层",
 	"item.kubejs.tungsten_reinforced_plating": "钨强化镀层",
@@ -665,6 +671,7 @@
 	"item.kubejs.tier_1_structural_alloy_sheet": "1级结构合金片",
 	"item.kubejs.tier_2_structural_alloy_sheet": "2级结构合金片",
 	"item.kubejs.tier_3_structural_alloy_sheet": "3级结构合金片",
+	"item.kubejs.titanium_sheet": "钛片",
 
 	"#hull_panel": "外壳镶板",
 	"item.kubejs.cobalt_hull_panel": "钴外壳镶板",
@@ -673,6 +680,7 @@
 	"item.kubejs.tier_1_structural_alloy_hull_panel": "1级结构合金外壳镶板",
 	"item.kubejs.tier_2_structural_alloy_hull_panel": "2级结构合金外壳镶板",
 	"item.kubejs.tier_3_structural_alloy_hull_panel": "3级结构合金外壳镶板",
+	"item.kubejs.enderium_hull_panel": "末影外壳镶板",
 
 	"#model_robot_arm": "机械臂",
 	"item.kubejs.cobalt_robot_arm": "钴机械臂",
@@ -708,6 +716,25 @@
 	"#sproket": "匙扣",
 	"item.kubejs.tier_1_magical_alloy_sproket": "1级魔法合金匙扣",
 
+	"#base_ingot":"基础锭",
+	"item.kubejs.signalum_base_ingot": "信素基础锭",
+	"item.kubejs.enderium_base_ingot": "末影基础锭",
+	"item.kubejs.lumium_base_ingot": "流明基础锭",
+
+	"#base_dust":"基础粉",
+	"item.kubejs.signalum_base_dust": "信素基础粉",
+	"item.kubejs.enderium_base_dust": "末影基础粉",
+	"item.kubejs.lumium_base_dust": "流明基础粉",
+
+	"#ring":"指环",
+	"item.kubejs.tier_1_magical_alloy_ring": "1级魔法合金指环",
+	"item.kubejs.orichalcum_ring": "山铜指环",
+
+	"#sprocket":"链轮",
+	"item.kubejs.tier_1_magical_alloy_sprocket": "1级魔法合金链轮",
+	"item.kubejs.orichalcum_sprocket": "山铜链轮",
+
+
 	"#cog_block": "齿轮方块",
 	"block.kubejs.iron_cog_block": "铁齿轮方块",
 	"block.kubejs.gold_cog_block": "金齿轮方块",
@@ -721,6 +748,7 @@
 	"block.kubejs.brass_cog_block": "黄铜齿轮方块",
 	"block.kubejs.cobalt_brass_cog_block": "钴黄铜齿轮方块",
 	"block.kubejs.tier_1_mechanical_alloy_cog_block": "1级机械合金齿轮方块",
+	"block.kubejs.tier_2_mechanical_alloy_cog_block": "2级机械合金齿轮方块",
 
 	"#casing": "外壳",
 	"block.kubejs.cobalt_casing": "钴外壳",
@@ -773,6 +801,11 @@
 	"block.kubejs.boron_storage_block": "硼块",
 	"block.kubejs.tier_2_structural_alloy_storage_block": "2级结构合金块",
 	"block.kubejs.tier_3_structural_alloy_storage_block": "3级结构合金块",
+	"block.kubejs.lunar_alloy_storage_block": "明月合金块",
+	"block.kubejs.exoskeleton_composit_storage_block": "外骨骼块",
+	"block.kubejs.tier_2_mechanical_alloy_storage_block": "2级机械合金块",
+	"block.kubejs.tier_2_electrical_alloy_storage_block": "2级电力合金块",
+	"block.kubejs.advanced_battery_alloy_storage_block": "高级能源合金块",
 
 	"#coil": "线圈",
 	"block.kubejs.cobalt_coil": "钴线圈",
@@ -783,6 +816,7 @@
 	"block.kubejs.tungsten_coil": "钨线圈",
 	"block.kubejs.adamantium_coil": "精金线圈",
 	"block.kubejs.white_alloy_coil": "镁银合金线圈",
+	"block.kubejs.tier_2_electrical_alloy_coil": "2级电力合金线圈",
 
 	"#scaffolding": "脚手架",
 	"block.kubejs.titanium_scaffolding": "钛脚手架",
@@ -848,7 +882,7 @@
 	"block.kubejs.1x_compressed_cobbled_deepslate": "1重压缩深板岩圆石",
 	"block.kubejs.2x_compressed_cobbled_deepslate": "2重压缩深板岩圆石",
 	"block.kubejs.3x_compressed_cobbled_deepslate": "3重压缩深板岩圆石",
-	"block.kubejs.1x_compressed_netherracke": "1重压缩下界岩",
+	"block.kubejs.1x_compressed_netherrack": "1重压缩下界岩",
 	"block.kubejs.2x_compressed_netherrack": "2重压缩下界岩",
 	"block.kubejs.3x_compressed_netherrack": "3重压缩下界岩",
 	"block.kubejs.solar_panel": "戴森面板",
@@ -861,6 +895,7 @@
 	"block.kubejs.compressed_steel_sheetmetal": "压缩钢板方块",
 	"block.kubejs.tier_2_structural_alloy_sheetmetal": "2级结构合金板方块",
 	"block.kubejs.tier_3_structural_alloy_sheetmetal": "3级结构合金板方块",
+	"block.kubejs.tier_1_structural_alloy_sheetmetal": "1级结构合金板方块",
 
 	"#ore": "矿石",
 	"block.kubejs.iron_ore": "铁矿石",

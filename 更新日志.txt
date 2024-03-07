@@ -1,3 +1,41 @@
+20240307 修复_master_material_list
+material: 'titanium',
+ore_name: '钛',
++ 'sheet'
+
+// material: 'stellarite',
+// ore_name: '陨石'
+
+material: 'thorium',
+ore_name: '钍',
+type: 'base_metal', → type: 'rare_metal',
+tier: 2, → tier: 3,
+
+material: 'lithium',
+ore_name: '锂',
+tier: 5, → tier: 4,
+
+material: 'signalum',
+ore_name: '信素',
++ 'base_ingot', 'base_dust'
+
+material: 'enderium',
+ore_name: '末影',
++'base_ingot', 'base_dust'
+
+material: 'tier_1_structural_alloy',
+ore_name: '1级结构合金',
++ 'sheetmetal'
+
+material: 'tier_2_structural_alloy',
+ore_name: '2级结构合金',
++ 'sheetmetal'
+
+material: 'tier_3_structural_alloy',
+ore_name: '3级结构合金',
++ 'sheetmetal'
+
+
 20240307 0.7.1
 material: 'swift_alloy',
 ore_name: '迅金',
