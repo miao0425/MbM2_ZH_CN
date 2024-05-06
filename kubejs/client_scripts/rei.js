@@ -45,6 +45,9 @@ onEvent('rei.hide.items', event => {
 	event.hide(Item.of('ae2:facade').ignoreNBT())
 	event.hide(Item.of('ae2:wireless_terminal').ignoreNBT())
 
+	event.hide('forbidden_arcanus:test_tube')
+	event.hide('forbidden_arcanus:blood_test_tube')
+
 	let MBDAny = [
 		'multiblocked:bot_mana.any',
 		'multiblocked:item.any',
@@ -67,6 +70,10 @@ onEvent('rei.hide.items', event => {
 })
 
 onEvent('rei.add.items', event => {
+	event.add(Item.of('forbidden_arcanus:blood_test_tube', '{Blood:0}'))
+	event.add(Item.of('forbidden_arcanus:blood_test_tube', '{Blood:3000}'))
+	event.add(Item.of('tconstruct:modifier_crystal', '{modifier:"tconstruct:unbreakable"}'))
+
 	var addItems = [
 		'thermal:ruby',
 		'thermal:ruby_block',
@@ -153,9 +160,7 @@ onEvent('rei.group', event => {
 		'reliquary:tipped_arrow',
 		'reliquary:mob_charm_fragment',
 		'reliquary:lingering_potion',
-		'mna:runescribing_recipe_paper',
-		'mna:manaweaving_pattern_recipe_paper',
-		'mna:thaumaturgic_link',
+		//'mna:runescribing_recipe_paper', 'mna:manaweaving_pattern_recipe_paper', 'mna:thaumaturgic_link',
 		'immersiveengineering:shader',
 		'tconstruct:repair_kit',
 		'tconstruct:pick_head',
@@ -236,7 +241,6 @@ onEvent('rei.group', event => {
 		'industrialforegoing:infinity_saw',
 		'industrialforegoing:infinity_hammer',
 		'industrialforegoing:infinity_trident',
-		'cb_microblock:microblock' /*This needs to be named!*/,
 	]
 
 	useNbt.forEach(id => {
@@ -244,6 +248,11 @@ onEvent('rei.group', event => {
 		const { namespace, path } = Utils.id(item.id)
 		event.groupSameItem(`mbm2:rei_groups/${namespace}/${path}`, item.getName(), item)
 	})
+	event.groupSameItem(
+		`mbm2:rei_groups/microblocks`,
+		'微型方块',
+		'cb_microblock:microblock'
+	)
 
 	/*
 	event.groupItems(`mbm2:rei_groups/wickerwood_constructs`, '条缕木构造体部件', [

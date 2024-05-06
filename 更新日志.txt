@@ -1,3 +1,82 @@
+20240506
+material: 'tin',
+ore_name: '锡',
++ 'plating'
+
+material: 'gold',
+ore_name: '金',
++ 'sheet'
+
+material: 'lead',
+ore_name: '铅',
++ 'plating'
+
+material: 'cobalt',
+ore_name: '钴',
++'bolt'
++, 'scaffolding', 'frame_box'
+
+material: 'nickel',
+ore_name: '镍',
++ 'plating'
+
+material: 'magnesium',
+ore_name: '镁',
+- 'gear', 'rod'
+
+material: 'steel',
+ore_name: '钢',
++ 'plating'
+
+material: 'cobalt_brass',
+ore_name: '钴黄铜',
++ 'plating'
+
+material: 'black_iron',
+ore_name: '黑铁',
++ 'dust', 'plate', 'plating'
++ fluid_id: 'kubejs:molten_black_iron'
+
+material: 'battery_alloy',
+ore_name: '能源合金',
++ 'ingot', 'nugget', 'dust', 'plate', 'plating'
++ 'storage_block'
++ fluid_id: 'kubejs:molten_battery_alloy'
+
+material: 'illuminated_menril',
+ore_name: '发光门瑞欧',
++ 'ingot', 'dust', 'nugget', 'plate', 'wire', 'plating'
++ 'storage_block'
++ fluid_id: 'kubejs:molten_illuminated_menril'
+
+material: 'fluix_steel',
+ore_name: '福鲁伊克斯钢',
+- 'scaffolding'
+
+material: 'lumium',
+ore_name: '流明',
++ 'plating'
+
+material: 'signalum',
+ore_name: '信素',
++ 'plating'
+
+material: 'crystalized_alloy',
+ore_name: '晶化合金',
++ 'ingot', 'dust', 'nugget', 'plate', 'wire', 'plating'
++ 'storage_block'
++ fluid_id: 'kubejs:molten_crystalized_alloy'
+
+material: 'tier_2_magical_alloy',
+ore_name: '2级魔法合金',
++ 'ingot', 'nugget', 'dust', 'rod', 'ring', 'sprocket', 'plate'
++ 'storage_block'
++ fluid_id: 'kubejs:molten_tier_2_magical_alloy'
+
+material: 'fluix',
+ore_name: '福鲁伊克斯',
++ fluid_id: 'kubejs:molten_fluix'
+
 20240307 修复_master_material_list
 material: 'titanium',
 ore_name: '钛',

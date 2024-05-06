@@ -19,7 +19,7 @@ var mods = [
 	//'malum',
 	'tconstruct',
 	'mythicbotany',
-	'mna',
+	//'mna',
 	//'createbigcannons',
 	'forbidden_arcanus',
 	'extendedcrafting',
@@ -28,12 +28,12 @@ var mods = [
 	'chemlib',
 	'biggerreactors',
 	'beyond_earth',
-	'extendedcrafting',
 	'elementalcraft',
+	'lazierae2',
 ]
 
 var smeltingList = [
-	'熔炉', //this is just to take up the 0 slot
+	'熔炉', //占位
 	'熔炉',
 	'熔铸炉',
 	'电弧炉',
@@ -45,7 +45,7 @@ var smeltingList = [
 ]
 
 var gradeLetter = [
-	`G`, //this is just to take up the 0 slot
+	`G`, //占位
 	`F`,
 	`E`,
 	`D`,
@@ -55,7 +55,7 @@ var gradeLetter = [
 ]
 
 var gradeLetterColor = [
-	Text.gray(`[G]`), //this is just to take up the 0 slot
+	Text.gray(`[G]`), //占位
 	Text.darkGray(`[F]`),
 	Text.white(`[E]`),
 	Text.green(`[D]`),
@@ -64,9 +64,9 @@ var gradeLetterColor = [
 	Text.gold(`[A]`),
 ]
 
-//This is also in ore_processing
+//加工数量
 global.refiningMultiplier = [
-	1, //this is just to take up the 0 slot
+	1, //占位
 	2,
 	4,
 	8,
@@ -87,11 +87,13 @@ var OreProcessing = {
 	Grit: '矿砂',
 	Fine_dust: '细矿粉',
 	Washed: '洗涤',
+	Purified: '纯净',
 	Crumbled: '细屑',
 	Cluster: '矿簇',
 	Brick: '砖块',
 	Infused: '聚合物',
 	Shard: '碎片',
+	Undefined: '未确定',
 }
 
 var OreFunction = {
@@ -137,9 +139,10 @@ var OreFunction = {
 	jimmium: '吉姆',
 	densite: '密度',
 	vincyte: '文赛特',
+	undefined: '未确定',
 }
 
-//Function that capitilizes the first leter
+//将第一个词转化为字母
 const nameUpper = name => {
 	if (name != null) {
 		return name.charAt(0).toUpperCase() + name.slice(1)
@@ -159,7 +162,7 @@ global.oreRefiningParts.forEach(part => {
 })
 
 var partColor = [
-	'§f', //Raw ore
+	'§f', //原矿
 	'§8',
 	'§f',
 	'§a',
@@ -173,7 +176,7 @@ onEvent('client.generate_assets', event => {
 		if (item.ore) {
 			global.oreProcessingParts.forEach(part => {
 				if (part.name != 'grit') {
-					//Color the ore part names based on the grade
+					//根据等级给矿石名称着色
 					if (
 						Item.of(`kubejs:${part.name}_${item.material}`) !=
 						null
@@ -189,9 +192,11 @@ onEvent('client.generate_assets', event => {
 								part.suffix
 							)}`
 						)
-					} else if (
+					}
+					if (
 						Item.of(`create:crushed_raw_${item.material}`) !=
-						null /*&& part.name == 'crushed'*/
+							null &&
+						part.name == 'crushed'
 					) {
 						event.addLang(
 							`item.create.crushed_raw_${item.material}`,
@@ -213,7 +218,7 @@ onEvent('client.generate_assets', event => {
 
 onEvent('item.tooltip', tooltip => {
 	tooltip.addAdvanced('multiblocked:symbol', (item, advanced, text) => {
-		text.add(1, [Text.aqua('the first tooltip has issues sometimes')])
+		text.add(1, [Text.aqua('这是第一条工具提示，防止有时会出现问题')])
 	})
 	//Multiblocked Tooltips 多方块提示
 	tooltip.addAdvanced(`multiblocked:energy_input_mk1`, (item, advanced, text) => {
@@ -236,6 +241,18 @@ onEvent('item.tooltip', tooltip => {
 		tooltip.addAdvanced(`kubejs:${item}_full`, (item, advanced, text) => {
 			text.add(1, [Text.of(`(${storage})`).green()])
 		})
+	})
+
+	//Misc tooltips 杂项提示
+	tooltip.addAdvanced('forbidden_arcanus:orb_of_temporary_flight', (item, advanced, text) => {
+		text.add(2, [Text.of('可在末地城的箱子中找到').aqua()])
+	})
+	tooltip.addAdvanced('forbidden_arcanus:blood_test_tube', (item, advanced, text) => {
+		text.add(1, [
+			Text.red('使用'),
+			Text.gold('神秘匕首'),
+			Text.red('杀死生物可以储存血'),
+		])
 	})
 
 	//AE2 Additions 应用能源扩展
@@ -345,7 +362,7 @@ onEvent('item.tooltip', tooltip => {
 			)
 		}*/
 
-		//Adds Metal Tier labels
+		// 添加金属等级标签
 		if (item.type == 'base_metal') {
 			mods.forEach(mod => {
 				parts.forEach(part => {
@@ -379,7 +396,7 @@ onEvent('item.tooltip', tooltip => {
 				})
 			})
 		} else if (item.type == 'alloy') {
-			//Adds Alloy Tier labels
+			// 添加合金等级标签
 			mods.forEach(mod => {
 				parts.forEach(part => {
 					if (mod == 'pneumaticcraft' || mod == 'mekanism') {
@@ -412,7 +429,7 @@ onEvent('item.tooltip', tooltip => {
 				})
 			})
 		} else if (item.type == 'rare_metal') {
-			//Adds Rare Metal Tier labels
+			// 添加稀有金属等级标签
 			mods.forEach(mod => {
 				parts.forEach(part => {
 					if (mod == 'pneumaticcraft' || mod == 'mekanism') {
@@ -445,9 +462,9 @@ onEvent('item.tooltip', tooltip => {
 				})
 			})
 		}
-		//Adds Ore Processing Info
+		//添加矿石加工信息
 		if (item.ore) {
-			//Bonus Tooltips
+			//额外工具提示
 			if (item.type != 'compound_ore') {
 				tooltip.addAdvanced(
 					`kubejs:grit_${item.material}`,
@@ -457,7 +474,7 @@ onEvent('item.tooltip', tooltip => {
 							Text.of(`${item.tier}`).gold(),
 						])
 						text.add(2, [
-							Text.white(`可在其中熔炼：`),
+							Text.white(`可熔炼于：`),
 							Text.yellow(
 								`${nameUpper(
 									smeltingList[item.tier]
@@ -475,7 +492,7 @@ onEvent('item.tooltip', tooltip => {
 							Text.of(`${item.tier}`).gold(),
 						])
 						text.add(2, [
-							Text.white(`可以熔炼成：`),
+							Text.white(`可以熔炼为：`),
 							Text.gold(
 								`${nameUpper(item.components[0])}`
 							),
@@ -494,7 +511,7 @@ onEvent('item.tooltip', tooltip => {
 								Text.of(`${item.tier}`).gold(),
 							])
 							text.add(2, [
-								Text.white(`可以熔炼成 `),
+								Text.white(`可以熔炼为： `),
 								Text.gold(
 									`${nameUpper(
 										item.components[0]
@@ -531,19 +548,19 @@ onEvent('item.tooltip', tooltip => {
 				)
 			}
 			////////////////////////////////////////////////
-			//											  //
-			//			PROCESSING TOOLTIP START		  //
-			//											  //
+			//											                     //
+			//			               加工提示	                 	   //
+			//											                    //
 			////////////////////////////////////////////////
 
 			global.oreProcessingParts.forEach((part, index) => {
 				if (item.type != 'compound_ore') {
 					console.log(part.prefix + item.material + part.suffix)
-					//red = error
-					//yellow = smelting
-					//green = processing
-					//aqua = refining
-					//Step one, generate the tooltip lines
+					//red = error 错误
+					//yellow = smelting 冶炼
+					//green = processing 加工
+					//aqua = refining 精炼
+					//第一步, 生成工具提示
 					let smeltingFunction = tier => {
 						let smeltingTooltip = ''
 						if (tier - 1 > part.grade && part.name != 'grit') {
@@ -757,7 +774,7 @@ onEvent('item.tooltip', tooltip => {
 						}
 						return tooltipLine3
 					}
-					//Dynamic Tooltip for ore parts
+					//动态工具提示
 					let processingToolTipCreation = name => {
 						//Make the Actual Tooltip
 						tooltip.addAdvanced(
@@ -817,7 +834,7 @@ onEvent('item.tooltip', tooltip => {
 						)
 					}
 
-					//Finds the exact items then runs the tooltip creation function
+					//查找准确的物品，然后运行工具提示创建功能
 					let partName = ''
 					if (part.name == 'raw' || part.name == 'crushed') {
 						mods.forEach(mod => {
@@ -840,7 +857,7 @@ onEvent('item.tooltip', tooltip => {
 									`${mod}:${part.name}_${item.material}_ore`
 								) != null
 							) {
-								partName = `${mod}:${part.name}_${item.material}_ore` //this is how create does it smh
+								partName = `${mod}:${part.name}_${item.material}_ore` //这就是创建的方法
 								processingToolTipCreation(partName)
 							}
 						})
@@ -856,14 +873,14 @@ onEvent('item.tooltip', tooltip => {
 					}
 
 					////////////////////////////////////////////////
-					//											  //
-					//			COMPOUND TOOLTIP START			  //
-					//											  //
+					//											                     //
+					//			           复合工具提示		   	            //
+					//											                     //
 					////////////////////////////////////////////////
 				} else {
-					//if it is compound ore
+					//若为复合矿石
 
-					//This needs to tell the player at a given moment what it can be sorted into an any time, if it can be smelted, and what grade it is
+					//告诉玩家，在特定时刻，它可以分拣成什么，是否可以熔炼，以及是什么等级
 
 					let compoundSmeltingFunction = grade => {
 						let smeltingTooltip = ''
@@ -948,7 +965,7 @@ onEvent('item.tooltip', tooltip => {
 						return tooltipLine
 					}
 					let compoundToolTipCreation = name => {
-						//Make the Compound part Tooltip
+						//创建复合部件工具提示
 						tooltip.addAdvanced(
 							name,
 							(items, advanced, text) => {
@@ -991,7 +1008,7 @@ onEvent('item.tooltip', tooltip => {
 							}
 						)
 					}
-					//Finds the exact items then runs the tooltip creation function
+					//查找准确的物品，然后运行工具提示创建功能
 					let partName = ''
 					if (
 						Item.of(`kubejs:${part.name}_${item.material}`) !=
@@ -1004,9 +1021,9 @@ onEvent('item.tooltip', tooltip => {
 			})
 
 			////////////////////////////////////////////////
-			//											  //
-			//			REFINING TOOLTIP START			  //
-			//											  //
+			//				                    							  //
+			//	             		精炼工具提示			          //
+			//									                     		  //
 			////////////////////////////////////////////////
 			global.oreRefiningParts.forEach((part, index) => {
 				let smeltingFunction = tier => {
@@ -1101,9 +1118,9 @@ onEvent('item.tooltip', tooltip => {
 
 				console.log(part.prefix + item.material + part.suffix)
 
-				//Dynamic Tooltip for ore parts
+				//动态工具提示
 				let refiningToolTipCreation = name => {
-					//Make the Actual Tooltip
+					//创建合金工具提示
 					tooltip.addAdvanced(name, (items, advanced, text) => {
 						text.add(1, [
 							Text.of(`金属等级: `).white(),
@@ -1124,7 +1141,7 @@ onEvent('item.tooltip', tooltip => {
 						}
 					})
 				}
-				//Finds the exact items then runs the tooltip creation function
+				//查找准确的物品，然后运行工具提示创建功能
 				let partName = ''
 				if (
 					Item.of(`kubejs:${part.name}_${item.material}`) != null &&
