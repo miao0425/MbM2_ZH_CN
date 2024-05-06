@@ -93,7 +93,6 @@ var OreProcessing = {
 	Brick: '砖块',
 	Infused: '聚合物',
 	Shard: '碎片',
-	Undefined: '未确定',
 }
 
 var OreFunction = {
@@ -139,7 +138,6 @@ var OreFunction = {
 	jimmium: '吉姆',
 	densite: '密度',
 	vincyte: '文赛特',
-	undefined: '未确定',
 }
 
 //将第一个词转化为字母
