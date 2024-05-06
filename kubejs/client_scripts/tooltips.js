@@ -494,7 +494,7 @@ onEvent('item.tooltip', tooltip => {
 						text.add(2, [
 							Text.white(`可以熔炼为：`),
 							Text.gold(
-								`${nameUpper(item.components[0])}`
+								`${item.trans_components[0]}`
 							),
 						])
 					}
