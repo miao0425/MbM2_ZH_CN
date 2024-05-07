@@ -87,7 +87,7 @@ var OreProcessing = {
 	Grit: '矿砂',
 	Fine_dust: '细矿粉',
 	Washed: '洗涤',
-	Purified: '纯净',
+	Pure: '纯净',
 	Crumbled: '细屑',
 	Cluster: '矿簇',
 	Brick: '砖块',
@@ -607,7 +607,7 @@ onEvent('item.tooltip', tooltip => {
 						text.add(2, [
 							Text.white(`可以熔炼为：`),
 							Text.gold(
-								`${nameUpper(item.components[0])}`
+								`${item.trans_components[0]}`
 							),
 						])
 					}
@@ -626,9 +626,7 @@ onEvent('item.tooltip', tooltip => {
 							text.add(2, [
 								Text.white(`可以熔炼为： `),
 								Text.gold(
-									`${nameUpper(
-										item.components[0]
-									)} 粒`
+									`${item.trans_components[0]} 粒`
 								),
 								Text.white(`或与原矿石混合`),
 							])
