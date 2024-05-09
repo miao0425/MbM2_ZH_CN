@@ -185,7 +185,6 @@
 			x: -2.0d
 			y: 3.5d
 			description: ["{chapter.4.quest.15.description.1}"]
-			dependencies: ["4056DE989F8A8E98"]
 			id: "2DFADAC92EFECDFD"
 			tasks: [
 				{

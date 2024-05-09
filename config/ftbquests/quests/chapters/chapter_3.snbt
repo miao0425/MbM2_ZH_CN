@@ -287,6 +287,7 @@
 		{
 			x: 7.0d
 			y: -2.0d
+			description: ["找到埃德尔木树苗，将其压碎"]
 			dependencies: ["20FA1AFF0BD65177"]
 			id: "0C62C2532E374205"
 			tasks: [{
@@ -366,11 +367,6 @@
 					item: "tconstruct:scorched_drain"
 				}
 				{
-					id: "73C01F853CAEA8F2"
-					type: "item"
-					item: "tconstruct:scorched_chute"
-				}
-				{
 					id: "6622B5FC9735A8C4"
 					type: "item"
 					item: "tconstruct:scorched_table"
@@ -392,6 +388,11 @@
 					id: "1C60C5013445F44D"
 					type: "item"
 					item: "tconstruct:blazing_blood_bucket"
+				}
+				{
+					id: "70A284B4CE66E1D7"
+					type: "item"
+					item: "tconstruct:gold_platform"
 				}
 			]
 		}
@@ -764,6 +765,7 @@
 			y: 9.0d
 			description: ["将石英和红石扔到水里合成福鲁伊克斯"]
 			dependencies: ["37610C524354F5F2"]
+			min_required_tasks: 4
 			id: "338A1AE116F1A652"
 			tasks: [
 				{
@@ -785,6 +787,11 @@
 					id: "6D3210A76A983076"
 					type: "item"
 					item: "ae2:fluix_dust"
+				}
+				{
+					id: "44E38671735FB021"
+					type: "item"
+					item: "ae2:fluix_crystal"
 				}
 			]
 		}
@@ -926,7 +933,7 @@
 		}
 		{
 			x: 11.5d
-			y: 7.0d
+			y: 5.5d
 			subtitle: "自动化 3D 制作！"
 			description: ["在自动放置方块进行 3D 制作时，需要先用红石脉冲平移该方块，然后再将物品扔进去开始制作"]
 			dependencies: ["20E99BAA6C9A4913"]
@@ -1159,7 +1166,10 @@
 		{
 			x: 11.0d
 			y: 1.5d
-			description: [""]
+			description: [
+				""
+				"源贮器可用于移动源"
+			]
 			dependencies: ["61CCA7FA3C371180"]
 			id: "63D72477BB0F83A4"
 			tasks: [{
@@ -1223,11 +1233,6 @@
 			id: "413DA778FC89BC94"
 			tasks: [
 				{
-					id: "496B2F2A593FFB21"
-					type: "item"
-					item: "thermal:charge_bench"
-				}
-				{
 					id: "465646683A293877"
 					type: "item"
 					item: {
@@ -1253,6 +1258,16 @@
 						Count: 1b
 						tag: { }
 					}
+				}
+				{
+					id: "64A339164E50852D"
+					type: "item"
+					item: "thermal:tinker_bench"
+				}
+				{
+					id: "4173A00F5ECFEC05"
+					type: "item"
+					item: "thermal:area_radius_augment"
 				}
 			]
 		}
@@ -1307,6 +1322,40 @@
 							stored_type: "naturesaura:nether"
 						}
 					}
+				}
+			]
+		}
+		{
+			x: 11.5d
+			y: 7.5d
+			description: ["可用于早期自动化制作"]
+			dependencies: ["4DE314D64C3E7C9E"]
+			id: "3261DDADEDB91321"
+			tasks: [{
+				id: "0E3F648E2D65ED8F"
+				type: "item"
+				item: "thermal:machine_crafter"
+			}]
+		}
+		{
+			title: "自动化木炭"
+			icon: "minecraft:charcoal"
+			x: 1.0d
+			y: 7.0d
+			description: ["自动化木炭"]
+			dependencies: ["1BDAAA788FF99E75"]
+			min_required_tasks: 1
+			id: "029683AB689F2019"
+			tasks: [
+				{
+					id: "1D21B65CFECDEEC5"
+					type: "item"
+					item: "minecraft:charcoal"
+					count: 1000L
+				}
+				{
+					id: "086C29A018EFCF38"
+					type: "checkmark"
 				}
 			]
 		}

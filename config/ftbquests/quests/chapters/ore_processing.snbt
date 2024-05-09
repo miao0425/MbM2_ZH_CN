@@ -246,16 +246,6 @@
 		}
 		{
 			x: -3.0d
-			y: 2.5d
-			id: "4B023EEF48EE4CBD"
-			tasks: [{
-				id: "40388CACF92606FC"
-				type: "item"
-				item: "mna:vinteum_dust"
-			}]
-		}
-		{
-			x: -3.0d
 			y: 5.5d
 			subtitle: "{chapter.7.quest.22.subtitle}"
 			id: "7F721ADE2B2549C2"
@@ -479,7 +469,7 @@
 			}]
 		}
 		{
-			x: -2.0d
+			x: -3.0d
 			y: 2.5d
 			id: "29FF83E81F4EF64C"
 			tasks: [{
@@ -489,7 +479,7 @@
 			}]
 		}
 		{
-			x: -1.0d
+			x: -2.0d
 			y: 2.5d
 			id: "61CE7BEBA6005FD2"
 			tasks: [{
@@ -540,9 +530,9 @@
 			description: ["{chapter.7.quest.48.description.1}"]
 			id: "519BC8708D266F3E"
 			tasks: [{
-				id: "25A83951D2400A39"
+				id: "0BBAF6A7DF0CD97A"
 				type: "item"
-				item: "allomancy:raw_cadmium"
+				item: "kubejs:raw_cadmium"
 			}]
 		}
 		{
