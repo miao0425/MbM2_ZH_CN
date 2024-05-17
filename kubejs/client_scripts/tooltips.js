@@ -626,7 +626,7 @@ onEvent('item.tooltip', tooltip => {
 							text.add(2, [
 								Text.white(`可以熔炼为： `),
 								Text.gold(
-									`${item.trans_components[0]} 粒`
+									`${item.trans_components[0]}粒`
 								),
 								Text.white(`或与原矿石混合`),
 							])
