@@ -288,6 +288,7 @@
 	"item.kubejs.adamantium_wire": "精金线",
 	"item.kubejs.illuminated_menril_wire": "发光门瑞欧线",
 	"item.kubejs.crystalized_alloy_wire": "晶化合金线",
+	"item.kubejs.lunar_alloy_wire": "明月合金线",
 
 	"#interlocking_component": "齿轮组",
 	"item.kubejs.copper_interlocking_component": "铜齿轮组",
@@ -665,6 +666,7 @@
 	"item.kubejs.adamantium_spool": "精金线轴",
 	"item.kubejs.white_alloy_spool": "镁银合金线轴",
 	"item.kubejs.tier_2_electrical_alloy_spool": "2级电力合金线轴",
+	"item.kubejs.lunar_alloy_spool": "明月合金线轴",
 
 	"#model_wire_coil": "中压线圈",
 	"item.kubejs.cobalt_wire_coil": "钴黄铜中压线圈",
@@ -750,6 +752,11 @@
 	"item.kubejs.red_alloy_dual_coil": "红石合金双层线圈",
 	"item.kubejs.tier_1_electrical_alloy_dual_coil": "1级电力合金双层线圈",
 	"item.kubejs.tier_2_electrical_alloy_dual_coil": "2级电力合金双层线圈",
+
+	"#model_part_bundle": "部件包",
+	"item.kubejs.red_alloy_part_bundle": "红石合金部件包",
+	"item.kubejs.tier_1_electrical_alloy_part_bundle": "1级电力合金部件包",
+	"item.kubejs.tier_2_electrical_alloy_part_bundle": "2级电力合金部件包",
 
 	"#component": "机械零件",
 	"item.kubejs.industrial_alloy_component": "工业合金机械零件",
@@ -883,7 +890,6 @@
 	"block.kubejs.tier_3_structural_alloy_scaffolding": "3级结构合金脚手架",
 	"block.kubejs.cobalt_alloy_scaffolding": "钴合金脚手架",
 	"block.kubejs.fluix_steel_scaffolding": "福鲁伊克斯钢脚手架",
-
 
 	"#hull_casing": "外壳",
 	"block.kubejs.titanite_hull_casing": "榍石外壳",
@@ -2390,7 +2396,7 @@
 
 	"fluid.kubejs.molten_illuminated_menril": "熔融发光门瑞欧",
 	"item.kubejs.molten_illuminated_menril_bucket": "熔融发光门瑞欧桶",
-	
+
 	"fluid.kubejs.molten_crystalized_alloy": "熔融晶化合金",
 	"item.kubejs.molten_crystalized_alloy_bucket": "熔融晶化合金桶",
 
@@ -2416,8 +2422,6 @@
 	"item.kubejs.quartz_slurry_bucket": "石英浆桶",
 	"item.kubejs.clean_quartz_slurry_bucket": "纯净石英浆桶",
 	"item.kubejs.concentrated_quartz_slurry_bucket": "浓缩石英浆桶",
-
-	
 
 	"#iron_ore": "铁矿石",
 	"block.kubejs.poor_deepslate_iron_ore": "深板岩贫瘠铁矿石",
@@ -8826,7 +8830,8 @@
 	"block.multiblocked.fluid_output": "流体输出口",
 	"block.multiblocked.entity": "实体",
 
-	"item.create.andesite_alloy": "安山合金",
+	"item.create.andesite_alloy": "石头合金",
+	"block.create.andesite_alloy_block": "石头合金块",
 	"create.recipe.rolling": "轧机",
 	"create.recipe.charginf": "特斯拉线圈",
 

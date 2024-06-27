@@ -624,6 +624,7 @@ global.newMaterialParts = [
 			'model_spool',
 			'model_wire_coil',
 			'model_dual_coil',
+			'model_part_bundle',
 		],
 		blockParts: [],
 		fluid: 'thick',
@@ -1344,7 +1345,7 @@ global.newMaterialParts = [
 		color: 0xebb250,
 		type: 'alloy',
 		tier: 4,
-		itemParts: ['ingot', 'nugget', 'dust', 'plate', 'plating'],
+		itemParts: ['ingot', 'nugget', 'dust', 'plate', 'plating', 'wire', 'model_spool'],
 		blockParts: ['storage_block'],
 		amount: 3,
 		dust_input: [
@@ -1838,6 +1839,7 @@ global.newMaterialParts = [
 			'model_wire_coil',
 			'sheet',
 			'model_dual_coil',
+			'model_part_bundle',
 		],
 		blockParts: ['storage_block', 'coil'],
 		fluid_id: 'kubejs:molten_tier_1_electrical_alloy',
@@ -1971,6 +1973,7 @@ global.newMaterialParts = [
 			'model_wire_coil',
 			'sheet',
 			'model_dual_coil',
+			'model_part_bundle',
 		],
 		blockParts: ['storage_block', 'coil'],
 		fluid_id: 'kubejs:molten_tier_2_electrical_alloy',
@@ -2024,11 +2027,13 @@ global.newMaterialParts = [
 			'3x #forge:dusts/tier_1_structural_alloy',
 			'2x #forge:dusts/cobalt_brass',
 			'#forge:dusts/titanium',
+			'create:brass_casing',
 		],
 		ingot_input: [
 			'3x #forge:ingots/tier_1_structural_alloy',
 			'2x #forge:ingots/cobalt_brass',
 			'#forge:ingots/titanium',
+			'create:brass_casing',
 		],
 	},
 	{
@@ -2192,7 +2197,7 @@ global.newMaterialParts = [
 		ore_name: '魔力钢',
 		color: 0x69a7ff,
 		type: 'magic_alloy',
-		tier: 2,
+		tier: 4,
 		itemParts: ['dust', 'plate', 'gear', 'rod'],
 		blockParts: [],
 		fluid: 'thick',
@@ -2201,6 +2206,7 @@ global.newMaterialParts = [
 	{
 		material: 'terrasteel',
 		ore_name: '泰拉钢',
+		tier: 5,
 		color: 0x63e645,
 		type: 'magic_alloy',
 		itemParts: ['plate', 'gear', 'rod'],
@@ -2211,6 +2217,7 @@ global.newMaterialParts = [
 	{
 		material: 'elementium',
 		ore_name: '源质钢',
+		tier: 6,
 		color: 0xf569b6,
 		type: 'magic_alloy',
 		itemParts: ['plate', 'gear', 'rod'],
@@ -2218,6 +2225,7 @@ global.newMaterialParts = [
 		fluid: 'thick',
 		fluid_id: 'kubejs:molten_elementium',
 	},
+	/*
 	{
 		material: 'transmuted_silver',
 		ore_name: '嬗变银',
@@ -2226,9 +2234,11 @@ global.newMaterialParts = [
 		itemParts: ['plate', 'gear', 'rod'],
 		blockParts: [],
 	},
+	*/
 	{
 		material: 'infused_mithril',
 		ore_name: '灌注秘银',
+		tier: 3,
 		color: 0x54b33b,
 		type: 'magic_alloy',
 		itemParts: ['plate', 'gear', 'rod', 'dust', 'bolt'],
@@ -2239,6 +2249,7 @@ global.newMaterialParts = [
 	{
 		material: 'tainted_gold',
 		ore_name: '污染黄金',
+		tier: 3,
 		color: 0xa66032,
 		type: 'magic_alloy',
 		itemParts: ['plate', 'gear', 'rod', 'dust', 'bolt'],
@@ -2249,6 +2260,7 @@ global.newMaterialParts = [
 	{
 		material: 'sky_metal',
 		ore_name: '天空金属',
+		tier: 4,
 		color: 0x83d5de,
 		type: 'magic_alloy',
 		itemParts: ['plate', 'gear', 'rod', 'dust', 'bolt'],

@@ -1,3 +1,20 @@
+20240627
+material: 'red_alloy',
+ore_name: '红石合金',
++ 'model_part_bundle',
+
+material: 'lunar_alloy',
+ore_name: '明月合金',
++ 'wire', 'model_spool'
+
+material: 'tier_1_electrical_alloy',
+ore_name: '1级电力合金',
++ 'model_part_bundle',
+
+material: 'tier_2_electrical_alloy',
+ore_name: '2级电力合金',
++ 'model_part_bundle',
+
 20240517
 material: 'infused_mithril',
 ore_name: '灌注秘银',

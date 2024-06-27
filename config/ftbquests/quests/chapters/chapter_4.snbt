@@ -1846,6 +1846,33 @@
 				item: "kubejs:pyrotheum_dust"
 			}]
 		}
+		{
+			x: 7.0d
+			y: 0.5d
+			description: ["您需要这些信息来找到挖掘机的位置"]
+			dependencies: ["043DFE88CE9F4625"]
+			progression_mode: "flexible"
+			min_required_tasks: 1
+			id: "51C7C9DE65FA0607"
+			tasks: [
+				{
+					id: "2F61FAD843BA4F95"
+					type: "item"
+					item: {
+						id: "immersiveengineering:survey_tools"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "0A8A6AFD22D0E2FB"
+					type: "item"
+					item: "immersiveengineering:sample_drill"
+				}
+			]
+		}
 	]
 	quest_links: [ ]
 }
