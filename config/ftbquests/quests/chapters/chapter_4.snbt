@@ -1771,16 +1771,13 @@
 		{
 			title: "自动制作！"
 			x: -0.5d
-			y: 3.5d
+			y: 8.0d
 			description: [
 				"您需要通过添加一个一定大小的存储盘来转换制作单元"
 				""
 				"在解锁钛金版之前，您只能使用 16 个频道"
 			]
-			dependencies: [
-				"592A4D0BDEB062DB"
-				"0D9ABDE851B5E722"
-			]
+			dependencies: ["592A4D0BDEB062DB"]
 			id: "6C4354CB6E54A96A"
 			tasks: [
 				{

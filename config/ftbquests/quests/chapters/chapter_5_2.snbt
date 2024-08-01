@@ -430,6 +430,7 @@
 		{
 			x: 1.5d
 			y: -0.5d
+			shape: "gear"
 			dependencies: [
 				"38BEC380C355AB46"
 				"36A0369CEDD44BB6"
