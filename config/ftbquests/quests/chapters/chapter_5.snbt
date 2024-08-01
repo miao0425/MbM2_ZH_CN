@@ -10,11 +10,8 @@
 	quests: [
 		{
 			x: -2.0d
-			y: 0.5d
-			dependencies: [
-				"09B9B831214F6072"
-				"43F8546BD8107D1C"
-			]
+			y: -0.5d
+			dependencies: ["09B9B831214F6072"]
 			id: "61B47177E307B079"
 			tasks: [{
 				id: "40A75A68DDC671EB"
@@ -23,8 +20,8 @@
 			}]
 		}
 		{
-			x: -3.0d
-			y: -0.5d
+			x: -2.0d
+			y: -2.0d
 			description: ["{chapter.4.quest.7.description.1}"]
 			dependencies: ["444E392EA0BB8807"]
 			dependency_requirement: "one_completed"
@@ -43,12 +40,12 @@
 			]
 		}
 		{
-			x: -1.5d
-			y: -0.5d
+			x: -3.5d
+			y: -2.0d
 			description: ["{chapter.4.quest.8.description.1}"]
 			dependencies: [
 				"2F38722F9A7D89CC"
-				"2F6A6631A7BAAE8E"
+				"14C449A154C78D7E"
 			]
 			id: "444E392EA0BB8807"
 			tasks: [{
@@ -58,25 +55,9 @@
 			}]
 		}
 		{
-			disable_toast: true
-			x: -5.5d
-			y: 2.0d
-			shape: "circle"
-			dependencies: ["75D4FF56D8BBF34A"]
-			id: "43F8546BD8107D1C"
-			tasks: [{
-				id: "643843CCC59774D1"
-				type: "item"
-				item: "chemlib:titanium_ingot"
-			}]
-		}
-		{
-			x: -5.0d
-			y: -2.5d
-			dependencies: [
-				"2F38722F9A7D89CC"
-				"09B9B831214F6072"
-			]
+			x: -2.0d
+			y: -3.5d
+			dependencies: ["2F38722F9A7D89CC"]
 			id: "72DC15C390A992F6"
 			tasks: [
 				{
@@ -92,12 +73,9 @@
 			]
 		}
 		{
-			x: -5.0d
-			y: -0.5d
-			dependencies: [
-				"02285A69B0A09A44"
-				"09B9B831214F6072"
-			]
+			x: -0.5d
+			y: -2.0d
+			dependencies: ["09B9B831214F6072"]
 			id: "01D41BC5B499F063"
 			tasks: [{
 				id: "498221C41233E562"
@@ -107,12 +85,15 @@
 		}
 		{
 			title: "{chapter.4.quest.12.title}"
-			x: -4.0d
-			y: -1.5d
+			x: -0.5d
+			y: -3.5d
+			shape: "gear"
 			dependencies: [
 				"72DC15C390A992F6"
 				"01D41BC5B499F063"
+				"1F060A2843541330"
 			]
+			size: 1.5d
 			id: "281E051C6D348B35"
 			tasks: [
 				{
@@ -140,14 +121,14 @@
 				tag: { }
 			}
 			x: 0.0d
-			y: 2.0d
+			y: 2.25d
 			shape: "hexagon"
 			description: ["{chapter.4.quest.13.description.1}"]
 			dependencies: [
 				"61B47177E307B079"
-				"2DFADAC92EFECDFD"
-				"70A8DBCE5978F640"
 				"5E914AEBF8D378B9"
+				"2DFADAC92EFECDFD"
+				"3BB743C226858D7A"
 			]
 			size: 1.5d
 			id: "06E62336B0646B17"
@@ -170,21 +151,11 @@
 			]
 		}
 		{
-			x: -2.0d
-			y: 2.0d
-			dependencies: ["12523E152182734F"]
-			id: "70A8DBCE5978F640"
-			tasks: [{
-				id: "449C6F6128FBF864"
-				type: "item"
-				item: "beyond_earth:oxygen_loader"
-			}]
-		}
-		{
 			title: "{chapter.4.quest.15.title}"
 			x: -2.0d
-			y: 3.5d
+			y: 1.0d
 			description: ["{chapter.4.quest.15.description.1}"]
+			dependencies: ["12523E152182734F"]
 			id: "2DFADAC92EFECDFD"
 			tasks: [
 				{
@@ -232,11 +203,16 @@
 					}
 					match_nbt: false
 				}
+				{
+					id: "05B3948744C3C3E1"
+					type: "item"
+					item: "beyond_earth:oxygen_loader"
+				}
 			]
 		}
 		{
-			x: 0.0d
-			y: 0.5d
+			x: -5.0d
+			y: 1.0d
 			dependencies: ["591233C3DDD3FE04"]
 			id: "5E914AEBF8D378B9"
 			tasks: [{
@@ -247,15 +223,14 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: -1.0d
+			x: -5.0d
+			y: -0.5d
 			description: ["{chapter.4.quest.17.description.1}"]
 			min_required_dependencies: 3
 			dependencies: [
-				"598DE255BBB061C3"
 				"2F38722F9A7D89CC"
-				"2F6A6631A7BAAE8E"
 				"0C98A801E8A7FE66"
+				"14C449A154C78D7E"
 			]
 			id: "591233C3DDD3FE04"
 			tasks: [
@@ -274,13 +249,9 @@
 		}
 		{
 			icon: "mbm2:ebf"
-			x: 0.0d
-			y: 4.0d
-			dependencies: [
-				"75D4FF56D8BBF34A"
-				"43F8546BD8107D1C"
-				"2F6A6631A7BAAE8E"
-			]
+			x: -2.0d
+			y: 3.0d
+			dependencies: ["75D4FF56D8BBF34A"]
 			id: "4668A1BA6F4E9EC6"
 			tasks: [
 				{
@@ -335,9 +306,9 @@
 			]
 		}
 		{
-			
-			x: 2.5d
-			y: 4.0d
+			title: "Tier 4 Metals"
+			x: 0.0d
+			y: 3.75d
 			shape: "gear"
 			dependencies: [
 				"06E62336B0646B17"
@@ -346,25 +317,25 @@
 			]
 			size: 1.5d
 			id: "13C4C068E2EB695E"
-			tasks: [
-				{
-					id: "4E248D82865F574E"
-					type: "item"
-					item: "mekanism:ingot_osmium"
+			tasks: [{
+				id: "4E248D82865F574E"
+				type: "item"
+				title: "Tier 4 Metals"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "mbm2:base_metals/tier_four"
+					}
 				}
-				{
-					id: "12208AF435CF6A3E"
-					type: "item"
-					item: "kubejs:platinum_ingot"
-				}
-			]
+			}]
 		}
 		{
 			icon: "mbm2:air_collector_mk1"
 			x: -3.5d
-			y: 2.0d
+			y: -0.5d
 			description: ["{chapter.4.quest.20.description.1}"]
-			dependencies: ["43F8546BD8107D1C"]
+			dependencies: ["14C449A154C78D7E"]
 			id: "12523E152182734F"
 			tasks: [
 				{
@@ -415,21 +386,9 @@
 			]
 		}
 		{
-			x: 0.0d
-			y: -3.0d
-			shape: "circle"
-			dependencies: ["75D4FF56D8BBF34A"]
-			id: "2F6A6631A7BAAE8E"
-			tasks: [{
-				id: "6B769139B688EB05"
-				type: "item"
-				item: "chemlib:magnesium_ingot"
-			}]
-		}
-		{
 			icon: "mbm2:flotation"
-			x: 2.5d
-			y: 2.0d
+			x: -2.0d
+			y: 5.5d
 			description: ["{chapter.4.quest.22.description.1}"]
 			dependencies: ["63D72477BB0F83A4"]
 			dependency_requirement: "one_completed"
@@ -487,13 +446,12 @@
 		}
 		{
 			title: "{chapter.4.quest.23.title}"
-			x: 2.0d
-			y: 0.5d
+			x: 0.0d
+			y: 5.5d
 			description: ["{chapter.4.quest.23.description.1}"]
 			dependencies: [
 				"02E4BADB1F8BEB33"
 				"0E2B25A2429C9556"
-				"2F6A6631A7BAAE8E"
 			]
 			id: "31EF1A8086E0512F"
 			tasks: [
@@ -517,7 +475,7 @@
 		}
 		{
 			icon: "mbm2:sorter_mk2"
-			x: 3.5d
+			x: 2.0d
 			y: 5.5d
 			dependencies: ["13C4C068E2EB695E"]
 			id: "67A63CB65FEDF5AC"
@@ -571,7 +529,7 @@
 		{
 			title: "{chapter.4.quest.26.title}"
 			x: -5.0d
-			y: -4.0d
+			y: -3.5d
 			description: ["{chapter.4.quest.26.description.1}"]
 			dependencies: ["418AC2EB203010CA"]
 			id: "02285A69B0A09A44"
@@ -580,13 +538,7 @@
 					id: "63B0B7FC57DC0DFA"
 					type: "item"
 					title: "{chapter.4.quest.26.task.1.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "pneumaticcraft:compressor/basic"
-						}
-					}
+					item: "pneumaticcraft:air_compressor"
 				}
 				{
 					id: "3F4FFF3F8F58CD0A"
@@ -602,8 +554,8 @@
 		}
 		{
 			title: "{chapter.4.quest.27.title}"
-			x: -2.5d
-			y: -3.0d
+			x: -3.5d
+			y: -3.5d
 			description: ["{chapter.4.quest.27.description.1}"]
 			dependencies: ["02285A69B0A09A44"]
 			id: "2F38722F9A7D89CC"
@@ -634,7 +586,7 @@
 		{
 			title: "{chapter.4.quest.29.title}"
 			x: -6.5d
-			y: -4.0d
+			y: -3.5d
 			id: "418AC2EB203010CA"
 			tasks: [
 				{
@@ -650,13 +602,10 @@
 			]
 		}
 		{
-			x: -7.0d
-			y: -1.0d
+			x: 1.5d
+			y: -3.75d
 			description: ["{chapter.4.quest.31.description.1}"]
-			dependencies: [
-				"43F8546BD8107D1C"
-				"281E051C6D348B35"
-			]
+			dependencies: ["281E051C6D348B35"]
 			size: 1.5d
 			id: "094B760566E1D22C"
 			tasks: [{
@@ -672,8 +621,8 @@
 			}]
 		}
 		{
-			x: 5.5d
-			y: -4.0d
+			x: 6.5d
+			y: -0.5d
 			dependencies: ["13D02E1465C8913E"]
 			id: "65E0754BC5138500"
 			tasks: [{
@@ -683,8 +632,8 @@
 			}]
 		}
 		{
-			x: 4.0d
-			y: -3.0d
+			x: 6.5d
+			y: -2.0d
 			dependencies: ["65E0754BC5138500"]
 			id: "6150C63B77F8E6D8"
 			tasks: [{
@@ -694,8 +643,8 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -1.5d
+			x: 5.0d
+			y: -2.0d
 			dependencies: ["6150C63B77F8E6D8"]
 			id: "78B61F638A702484"
 			tasks: [{
@@ -705,8 +654,8 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: -1.5d
+			x: 5.0d
+			y: -3.5d
 			dependencies: ["6150C63B77F8E6D8"]
 			id: "207551C54C784815"
 			tasks: [{
@@ -716,23 +665,34 @@
 			}]
 		}
 		{
-			x: 4.5d
-			y: 0.0d
+			x: 3.5d
+			y: -3.5d
 			description: ["您需要用森林法杖将其连接到法力池，这样才能收集到花朵的法力。"]
-			dependencies: [
-				"207551C54C784815"
-				"60255993C8EFE1D2"
-			]
+			dependencies: ["207551C54C784815"]
 			id: "343E2A3C2342E08A"
-			tasks: [{
-				id: "28DC11FC6D73A531"
-				type: "item"
-				item: "botania:mana_spreader"
-			}]
+			tasks: [
+				{
+					id: "28DC11FC6D73A531"
+					type: "item"
+					item: "botania:mana_spreader"
+				}
+				{
+					id: "0A7BE3780B18AF4B"
+					type: "item"
+					item: {
+						id: "botania:twig_wand"
+						Count: 1b
+						tag: {
+							color2: 0
+							color1: 0
+						}
+					}
+				}
+			]
 		}
 		{
 			x: 3.5d
-			y: 0.0d
+			y: -2.0d
 			dependencies: ["78B61F638A702484"]
 			id: "24AB6B3E3C29F3CD"
 			tasks: [{
@@ -742,29 +702,9 @@
 			}]
 		}
 		{
-			title: "森林法杖"
-			x: 5.5d
-			y: -1.5d
-			dependencies: ["207551C54C784815"]
-			id: "60255993C8EFE1D2"
-			tasks: [{
-				id: "70DDBD8792048E93"
-				type: "item"
-				item: {
-					id: "botania:twig_wand"
-					Count: 1b
-					tag: {
-						color1: 0
-						color2: 0
-					}
-				}
-				match_nbt: false
-			}]
-		}
-		{
 			title: "注入Mana的物品"
-			x: 4.5d
-			y: 1.5d
+			x: 3.5d
+			y: -0.5d
 			dependencies: [
 				"24AB6B3E3C29F3CD"
 				"343E2A3C2342E08A"
@@ -786,8 +726,8 @@
 		}
 		{
 			title: "产能花"
-			x: 5.5d
-			y: 0.0d
+			x: 5.0d
+			y: -0.5d
 			dependencies: ["65E0754BC5138500"]
 			id: "469495A371AA465F"
 			tasks: [
@@ -804,8 +744,9 @@
 			]
 		}
 		{
-			x: 4.5d
-			y: 3.0d
+			x: 2.0d
+			y: -0.5d
+			description: ["Drop the items shown in the recipe, then a living rock, followed by a swing of your wand of the forest. If you've got a Mana Spreader linked to the altar, it will then start."]
 			dependencies: ["26C90FCCFBBEBD70"]
 			id: "3BB743C226858D7A"
 			tasks: [{
@@ -817,12 +758,9 @@
 		{
 			title: "Mana压缩机 (8x 矿石精炼)"
 			icon: "mbm2:mana_compressor"
-			x: 4.5d
-			y: 4.5d
-			dependencies: [
-				"13C4C068E2EB695E"
-				"3BB743C226858D7A"
-			]
+			x: 2.0d
+			y: 3.0d
+			dependencies: ["13C4C068E2EB695E"]
 			id: "5A00E4928B51CBF5"
 			tasks: [
 				{
@@ -867,8 +805,8 @@
 		}
 		{
 			title: "神秘花"
-			x: 4.0d
-			y: -5.0d
+			x: 8.0d
+			y: -0.5d
 			id: "13D02E1465C8913E"
 			tasks: [{
 				id: "0D788CD792C63848"
@@ -885,8 +823,8 @@
 		}
 		{
 			title: "更多奇特石油"
-			x: -2.5d
-			y: -4.5d
+			x: -5.0d
+			y: -5.0d
 			subtitle: "Its probably nothing"
 			description: ["使用地面上的传感器找到一处石油矿藏，然后用气体升降器将其钻到地面上"]
 			dependencies: ["02285A69B0A09A44"]
@@ -912,7 +850,7 @@
 		{
 			title: "压力室"
 			x: -5.0d
-			y: -5.5d
+			y: -2.0d
 			description: [
 				"您需要用管道将物品送入和送出压力室进行制作"
 				""
@@ -945,6 +883,94 @@
 					count: 2L
 				}
 			]
+		}
+		{
+			title: "Laser Circuit Assembly"
+			x: 1.0d
+			y: -2.0d
+			dependencies: ["7F7EC08E0D521059"]
+			id: "1F060A2843541330"
+			tasks: [
+				{
+					id: "465E84854E29FC91"
+					type: "item"
+					item: "pneumaticcraft:assembly_controller"
+				}
+				{
+					id: "5E923135629863ED"
+					type: "item"
+					item: "pneumaticcraft:assembly_laser"
+				}
+				{
+					id: "2C84D688B6BDAAEA"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_import"
+				}
+				{
+					id: "282D9CE7FFB1FBE4"
+					type: "item"
+					item: "pneumaticcraft:assembly_io_unit_export"
+				}
+				{
+					id: "634BE93F36FA5B8D"
+					type: "item"
+					item: "pneumaticcraft:assembly_platform"
+				}
+				{
+					id: "33F3AFB97B50C99A"
+					type: "item"
+					item: "pneumaticcraft:assembly_program_laser"
+				}
+			]
+			rewards: [
+				{
+					id: "399834E5793DD286"
+					type: "item"
+					item: "pneumaticcraft:security_upgrade"
+				}
+				{
+					id: "3618C8C1A7575C9F"
+					type: "item"
+					item: "pneumaticcraft:empty_pcb"
+					count: 8
+				}
+			]
+		}
+		{
+			x: -0.5d
+			y: -0.5d
+			dependencies: ["09B9B831214F6072"]
+			id: "7F7EC08E0D521059"
+			tasks: [
+				{
+					id: "4D29C6EE2BE6CDD3"
+					type: "item"
+					item: "pneumaticcraft:amadron_tablet"
+				}
+				{
+					id: "11442EB89D6B4FD8"
+					type: "item"
+					item: "pneumaticcraft:charging_station"
+				}
+			]
+		}
+		{
+			x: -3.5d
+			y: -5.0d
+			dependencies: ["02285A69B0A09A44"]
+			id: "50BDCFC5C61EAAF3"
+			tasks: [{
+				id: "0506F92DAB67DD6F"
+				type: "item"
+				title: "Compressor Upgrades"
+				item: {
+					id: "itemfilters:tag"
+					Count: 1b
+					tag: {
+						value: "pneumaticcraft:compressor/basic"
+					}
+				}
+			}]
 		}
 	]
 	quest_links: [ ]

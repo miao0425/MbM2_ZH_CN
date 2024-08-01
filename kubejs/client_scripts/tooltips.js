@@ -30,6 +30,7 @@ var mods = [
 	'beyond_earth',
 	'elementalcraft',
 	'lazierae2',
+	'powah',
 ]
 
 var smeltingList = [
@@ -296,7 +297,8 @@ onEvent('client.generate_assets', event => {
 					) {
 						event.addLang(
 							`item.kubejs.${part.name}_${item.material}`,
-							`${partColor[part.grade]
+							`${
+								partColor[part.grade]
 							}${global.displayNameFunction(
 								item.material,
 								item.ore_name,
@@ -307,12 +309,13 @@ onEvent('client.generate_assets', event => {
 					}
 					if (
 						Item.of(`create:crushed_raw_${item.material}`) !=
-						null &&
+							null &&
 						part.name == 'crushed'
 					) {
 						event.addLang(
 							`item.create.crushed_raw_${item.material}`,
-							`${partColor[part.grade]
+							`${
+								partColor[part.grade]
 							}${global.displayNameFunction(
 								item.material,
 								item.ore_name,
@@ -370,7 +373,16 @@ onEvent('item.tooltip', tooltip => {
 	})
 
 	//Summoning Altar 召唤祭坛
-	let summonable = ['thermal:basalz_spawn_egg', 'naturalist:firefly_spawn_egg', 'thermal:blizz_spawn_egg', 'thermal:blitz_spawn_egg', 'artifacts:mimic_spawn_egg', 'minecraft:elder_guardian_spawn_egg', 'minecraft:blaze_spawn_egg', 'minecraft:phantom_spawn_egg']
+	let summonable = [
+		'thermal:basalz_spawn_egg',
+		'naturalist:firefly_spawn_egg',
+		'thermal:blizz_spawn_egg',
+		'thermal:blitz_spawn_egg',
+		'artifacts:mimic_spawn_egg',
+		'minecraft:elder_guardian_spawn_egg',
+		'minecraft:blaze_spawn_egg',
+		'minecraft:phantom_spawn_egg',
+	]
 	summonable.forEach(spawnegg => {
 		tooltip.addAdvanced(`${spawnegg}`, (item, advanced, text) => {
 			text.add(1, [Text.of('可在召唤祭坛召唤').darkGreen()])
@@ -615,9 +627,7 @@ onEvent('item.tooltip', tooltip => {
 						])
 						text.add(2, [
 							Text.white(`可以熔炼为：`),
-							Text.gold(
-								`${item.trans_components[0]}`
-							),
+							Text.gold(`${item.trans_components[0]}`),
 						])
 					}
 				)
@@ -777,9 +787,9 @@ onEvent('item.tooltip', tooltip => {
 								),
 								Text.gray(
 									OreProcessing[
-									oreProcessingPartList[
-									index - 1
-									]
+										oreProcessingPartList[
+											index - 1
+										]
 									]
 								),
 							]
@@ -791,20 +801,21 @@ onEvent('item.tooltip', tooltip => {
 								),
 								Text.gray(
 									OreProcessing[
-									oreProcessingPartList[
-									index - 1
-									]
+										oreProcessingPartList[
+											index - 1
+										]
 									]
 								),
 								Text.gray(
-									` [${gradeLetter[
-									index - 1
-									]
+									` [${
+										gradeLetter[
+											index - 1
+										]
 									}]`
 								),
 								refiningFunction(
 									oreRefiningPartList[
-									index - 1
+										index - 1
 									],
 									index - 1
 								),
@@ -823,9 +834,9 @@ onEvent('item.tooltip', tooltip => {
 								),
 								Text.of(
 									OreProcessing[
-									oreProcessingPartList[
-									index
-									]
+										oreProcessingPartList[
+											index
+										]
 									]
 								).white(),
 							]
@@ -837,9 +848,9 @@ onEvent('item.tooltip', tooltip => {
 								),
 								Text.of(
 									OreProcessing[
-									oreProcessingPartList[
-									index
-									]
+										oreProcessingPartList[
+											index
+										]
 									] + ' '
 								).white(),
 								gradeLetterColor[index],
@@ -857,7 +868,7 @@ onEvent('item.tooltip', tooltip => {
 						//console.log(oreProcessingPartList)
 						if (
 							oreProcessingPartList[
-							oreProcessingPartList.length - 1
+								oreProcessingPartList.length - 1
 							] == nameUpper(part)
 						) {
 							//last item on the list has no next step -2 because grit is last
@@ -871,20 +882,21 @@ onEvent('item.tooltip', tooltip => {
 								),
 								Text.gray(
 									OreProcessing[
-									oreProcessingPartList[
-									index + 1
-									]
+										oreProcessingPartList[
+											index + 1
+										]
 									]
 								),
 								Text.gray(
-									` [${gradeLetter[
-									index + 1
-									]
+									` [${
+										gradeLetter[
+											index + 1
+										]
 									}]`
 								),
 								refiningFunction(
 									oreRefiningPartList[
-									index + 1
+										index + 1
 									],
 									index + 1
 								),
@@ -1006,10 +1018,11 @@ onEvent('item.tooltip', tooltip => {
 							smeltingTooltip = [
 								Text.white(`冶炼成: `),
 								Text.gold(
-									`${OreFunction[
-									item
-										.components[0]
-									]
+									`${
+										OreFunction[
+											item
+												.components[0]
+										]
 									}`
 								),
 							]
@@ -1027,24 +1040,26 @@ onEvent('item.tooltip', tooltip => {
 						if (line <= part.grade + 1) {
 							if (part.grade == 0) {
 								tooltipLine = Text.white(
-									`- ${OreFunction[
-									item
-										.components[
-									line
-									]
-									]
+									`- ${
+										OreFunction[
+											item
+												.components[
+												line
+											]
+										]
 									}`
 								)
 							} else {
 								tooltipLine = [
 									gradeLetterColor[index],
 									Text.white(
-										` ${OreFunction[
-										item
-											.components[
-										line
-										]
-										]
+										` ${
+											OreFunction[
+												item
+													.components[
+													line
+												]
+											]
 										}`
 									),
 								]
@@ -1065,13 +1080,14 @@ onEvent('item.tooltip', tooltip => {
 							tooltipLine = [
 								gradeLetterColor[line - 2],
 								Text.gray(
-									` ${OreFunction[
-									item
-										.components[
-									line -
-									1
-									]
-									]
+									` ${
+										OreFunction[
+											item
+												.components[
+												line -
+													1
+											]
+										]
 									}`
 								),
 							]
@@ -1177,7 +1193,7 @@ onEvent('item.tooltip', tooltip => {
 					let tooltipLine1 = ''
 					if (
 						oreRefiningPartList[
-						oreRefiningPartList.length - 1
+							oreRefiningPartList.length - 1
 						] == nameUpper(linePart)
 					) {
 						// if there is no higher tier (inverted because I'm cool like that or something)
@@ -1187,9 +1203,9 @@ onEvent('item.tooltip', tooltip => {
 							smeltingCheckFunction(index + 1),
 							Text.gray(
 								OreProcessing[
-								oreRefiningPartList[
-								index + 1
-								]
+									oreRefiningPartList[
+										index + 1
+									]
 								]
 							),
 							Text.gray(` (${index + 1})`),
@@ -1219,9 +1235,9 @@ onEvent('item.tooltip', tooltip => {
 							smeltingCheckFunction(index - 1),
 							Text.gray(
 								OreProcessing[
-								oreRefiningPartList[
-								index - 1
-								]
+									oreRefiningPartList[
+										index - 1
+									]
 								]
 							),
 							Text.gray(` (${index - 1})`),
@@ -1267,4 +1283,7 @@ onEvent('item.tooltip', tooltip => {
 			})
 		}
 	})
+
+	//Dyson info
+	tooltip.add('kubejs:standard_dyson_panel', `在太空中可产生 100,000 RF/t 的能量`)
 })

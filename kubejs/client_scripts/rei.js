@@ -376,6 +376,8 @@ onEvent('rei.remove.categories', event => {
 		'industrialforegoing:fermenter',
 		'industrialforegoing:ore_sieve',
 		'elementalcraft:purification',
+		'packagedauto:fluid_package_filling',
+		'packagedauto:fluid_package_contents'
 	]
 
 	badCategories.forEach(item => {

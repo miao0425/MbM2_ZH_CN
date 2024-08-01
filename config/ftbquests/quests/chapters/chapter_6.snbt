@@ -10,7 +10,7 @@
 	quests: [
 		{
 			x: 1.0d
-			y: -1.75d
+			y: -2.0d
 			dependencies: ["7427C745524AC00C"]
 			id: "1427B6C8DB9EA99F"
 			tasks: [{
@@ -21,7 +21,7 @@
 		}
 		{
 			x: -0.5d
-			y: 1.25d
+			y: 1.0d
 			dependencies: ["766FA3877A259983"]
 			id: "248A48AB03F59D80"
 			tasks: [{
@@ -32,7 +32,7 @@
 		}
 		{
 			x: 1.0d
-			y: 1.25d
+			y: 1.0d
 			dependencies: ["248A48AB03F59D80"]
 			id: "34F1D7C257F4D2FD"
 			tasks: [{
@@ -43,7 +43,7 @@
 		}
 		{
 			x: -0.5d
-			y: -0.25d
+			y: -0.5d
 			dependencies: ["766FA3877A259983"]
 			id: "6E0C90037432031C"
 			tasks: [{
@@ -54,7 +54,7 @@
 		}
 		{
 			x: 1.0d
-			y: -0.25d
+			y: -0.5d
 			dependencies: ["6E0C90037432031C"]
 			id: "13A76B63A6E8833D"
 			tasks: [{
@@ -65,7 +65,7 @@
 		}
 		{
 			x: 3.0d
-			y: -0.25d
+			y: -0.5d
 			dependencies: [
 				"13A76B63A6E8833D"
 				"6C3EBA1AD09FEE6C"
@@ -78,8 +78,8 @@
 			}]
 		}
 		{
-			x: 2.0d
-			y: 2.75d
+			x: 0.5d
+			y: 4.25d
 			dependencies: ["64E2B67C0B0AB9E4"]
 			id: "4EEBD21943C92471"
 			tasks: [{
@@ -90,8 +90,8 @@
 		}
 		{
 			title: "{chapter.6.quest.8.title}"
-			x: 3.5d
-			y: 2.75d
+			x: 2.0d
+			y: 4.25d
 			dependencies: ["4EEBD21943C92471"]
 			id: "1F35BD186E84BA9C"
 			tasks: [
@@ -119,7 +119,7 @@
 		}
 		{
 			x: -0.5d
-			y: 2.75d
+			y: 2.5d
 			dependencies: ["248A48AB03F59D80"]
 			id: "64E2B67C0B0AB9E4"
 			tasks: [{
@@ -130,7 +130,7 @@
 		}
 		{
 			x: -0.5d
-			y: -1.75d
+			y: -2.0d
 			description: ["激光钻基地可以有多个激光钻一起工作，以加快采矿速度。将它们放置在指向基地的 3 个空间内"]
 			dependencies: ["766FA3877A259983"]
 			id: "7427C745524AC00C"
@@ -149,7 +149,7 @@
 		}
 		{
 			x: -2.5d
-			y: -1.75d
+			y: -2.0d
 			description: ["激光钻基地可以有多个激光钻一起工作，以加快采矿速度。将它们放置在指向基地的 3 个空间内"]
 			dependencies: ["766FA3877A259983"]
 			id: "4EB8F3B73CD527A2"
@@ -168,7 +168,7 @@
 		}
 		{
 			x: -2.5d
-			y: -0.25d
+			y: -0.5d
 			dependencies: [
 				"34A861977367F4EA"
 				"196DBF0A6B8A6926"
@@ -183,11 +183,12 @@
 			}]
 		}
 		{
-			x: 3.5d
-			y: -1.75d
+			x: 6.0d
+			y: -0.5d
 			dependencies: [
 				"1CF39FE5E8135E08"
 				"66520CE078BFCC2F"
+				"44302F55B2C258AA"
 			]
 			id: "23C9DE786EB00B38"
 			tasks: [
@@ -205,8 +206,8 @@
 		}
 		{
 			title: "飞往金星和水星的第 3 级火箭"
-			x: 3.25d
-			y: -3.5d
+			x: 5.25d
+			y: 1.5d
 			shape: "hexagon"
 			size: 1.5d
 			id: "66520CE078BFCC2F"
@@ -222,7 +223,7 @@
 		}
 		{
 			x: 1.0d
-			y: -3.25d
+			y: -3.5d
 			dependencies: [
 				"7427C745524AC00C"
 				"0C86C3CCA8F0E429"
@@ -236,7 +237,7 @@
 		}
 		{
 			x: -0.5d
-			y: -3.25d
+			y: -3.5d
 			description: ["用于防止凋零物移动，以生产以太气体"]
 			dependencies: ["766FA3877A259983"]
 			id: "0C86C3CCA8F0E429"
@@ -258,8 +259,22 @@
 			}]
 		}
 		{
+			x: 2.5d
+			y: 1.0d
+			dependencies: [
+				"34F1D7C257F4D2FD"
+				"4270C15F46FFA1B0"
+			]
+			id: "75201B00917E0634"
+			tasks: [{
+				id: "47F12821B1A422D1"
+				type: "item"
+				item: "industrialforegoing:material_stonework_factory"
+			}]
+		}
+		{
 			x: -2.5d
-			y: 1.25d
+			y: 1.0d
 			dependencies: ["766FA3877A259983"]
 			id: "75201B00917E0634"
 			tasks: [{
@@ -270,13 +285,34 @@
 		}
 		{
 			x: -4.5d
-			y: -0.25d
+			y: -0.5d
 			shape: "circle"
 			id: "0C3B634C865AD3B9"
 			tasks: [{
 				id: "53394211EE95D244"
 				type: "item"
 				item: "beyond_earth:ostrum_ingot"
+			}]
+		}
+		{
+			x: 3.0d
+			y: 2.5d
+			id: "4270C15F46FFA1B0"
+			tasks: [{
+				id: "271CE7B158DBC982"
+				type: "item"
+				item: "kubejs:exoskeleton_composit_ingot"
+			}]
+		}
+		{
+			title: "Blast Furnace Upgrades (again)"
+			x: 5.5d
+			y: -2.5d
+			id: "44302F55B2C258AA"
+			tasks: [{
+				id: "628A5BCE5E2F0EFA"
+				type: "item"
+				item: "kubejs:tungsten_coil"
 			}]
 		}
 	]

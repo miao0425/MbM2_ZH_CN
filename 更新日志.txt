@@ -1,3 +1,85 @@
+20240729
+material: 'aetherium',
+ore_name: '天华',
+itemParts: ['ingot', 'nugget', 'dust', 'plate', 'gear', 'rod', 'plating'],
+blockParts: ['storage_block'],
+fluid: 'thick',
+
+material: 'vibranium',
+ore_name: '振金',
++ 'plate', 'gear', 'rod', 'interlocking_component', 'reinforced_plating', 'sheet', 'hull_panel', 'plating', 'bolt', 'wire', 'model_spool', 'model_wire_coil', 'model_dual_coil', 'model_part_bundle'
++ fluid
+
+material: 'uru',
+ore_name: '乌鲁',
++ 'plate', 'gear', 'rod', 'reinforced_plating', 'sheet', 'hull_panel', 'plating', 'bolt'/*, 'wire', 'model_spool', 'model_wire_coil', */
+
+material: 'draconium',
+ore_name: '龙',
++ 'plate', 'gear', 'rod', 'reinforced_plating', 'sheet', 'hull_panel', 'plating', 'bolt'/*, 'wire', 'model_spool', 'model_wire_coil', */
+
+material: 'chromium',
+ore_name: '铬',
++ 'ingot'
+
+material: 'aerospace_alloy',
+ore_name: '航空合金',
++ 'sheet'
+
+material: 'inconel',
+ore_name: '镍铬基合金',
++ 'hull_panel'
+
+material: 'adamantine_alloy',
+ore_name: '精金合金',
++ 'reinforced_plating', 'model_rocket_nose_cone', 'rocket_fin'
+
+material: 'tier_4_mechanical_alloy',
+ore_name: '4级机械合金',
++ 'ingot', 'nugget', 'dust', 'plate', 'wire', 'gear', 'interlocking_component', 'rod', 'model_robot_arm'
++ 'storage_block', 'cog_block',
++ fluid
+
+material: 'tier_2_electrical_alloy',
+ore_name: '2级电力合金',
++ 'ingot', 'nugget', 'dust', 'plate', 'wire', 'model_spool', 'model_wire_coil', 'sheet', 'model_dual_coil', 'model_part_bundle'
++ 'storage_block', 'coil'
++ fluid
+
+material: 'tier_3_magical_alloy',
+ore_name: '3级魔法合金',
++ 'ingot', 'nugget', 'dust', 'plate',                          'rod', 'ring', 'sprocket'
++ 'storage_block'
++ fluid
+
+
+material: 'tier_4_structural_alloy',
+ore_name: '4级结构合金',
++ 'ingot', 'nugget', 'dust', 'plate',            'rod', 'plating', 'reinforced_plating', 'hull_panel', 'bolt', 'sheet', 'component'
++ 'storage_block', 'casing', 'scaffolding', 'hull_casing', 'frame_box', 'sheetmetal'
++ fluid
+
+material: 'mana_diamond',
+ore_name: '魔力钻石',
++ dust
+
+material: 'terrasteel',
+ore_name: '泰拉钢',
++  'dust'
+
+material: 'oganesson',
+ore_name: '奥气',
++ 'ingot', 'dust'
+
+material: 'radon',
+ore_name: '氡',
++ 'ingot', 'dust'
+
+material: 'aerospace_alloy',
+ore_name: '航空合金',
++ 'sheet'
+
+
 20240627
 material: 'red_alloy',
 ore_name: '红石合金',

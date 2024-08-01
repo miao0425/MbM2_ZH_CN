@@ -747,8 +747,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 2.5d
+			x: 1.5d
+			y: 3.5d
 			shape: "circle"
 			dependencies: ["3DB2C9FEEFF74379"]
 			size: 1.5d
@@ -790,7 +790,10 @@
 			icon: "immersiveengineering:excavator"
 			x: 7.0d
 			y: 1.5d
-			dependencies: ["758CEB9A27CE3547"]
+			dependencies: [
+				"758CEB9A27CE3547"
+				"51C7C9DE65FA0607"
+			]
 			min_required_tasks: 8
 			id: "043DFE88CE9F4625"
 			tasks: [
@@ -1007,8 +1010,8 @@
 		}
 		{
 			icon: "mbm2:mixer_mk1"
-			x: 10.0d
-			y: 1.25d
+			x: -2.5d
+			y: 6.25d
 			description: ["几乎可以磨制任何合金"]
 			size: 1.25d
 			id: "627B714B402BEE67"
@@ -1118,32 +1121,20 @@
 		}
 		{
 			title: "Advanced Energetic Alloys"
-			x: 8.5d
-			y: 1.5d
+			x: -0.5d
+			y: 6.5d
 			description: ["You might want to set up some good power supply before mass producing AE components."]
 			dependencies: [
-				"75D4FF56D8BBF34A"
 				"627B714B402BEE67"
+				"52CA3CCD2B27CB98"
 			]
 			min_required_tasks: 1
 			id: "592A4D0BDEB062DB"
-			tasks: [
-				{
-					id: "3617876F5A6612CD"
-					type: "item"
-					item: "thermal:signalum_dust"
-				}
-				{
-					id: "1460BBB1A47E4503"
-					type: "item"
-					item: "thermal:lumium_dust"
-				}
-				{
-					id: "6B4C7DE866A2430D"
-					type: "item"
-					item: "thermal:enderium_dust"
-				}
-			]
+			tasks: [{
+				id: "1460BBB1A47E4503"
+				type: "item"
+				item: "thermal:lumium_dust"
+			}]
 		}
 		{
 			x: 10.0d
@@ -1212,13 +1203,10 @@
 			]
 		}
 		{
-			x: 7.0d
-			y: 4.0d
+			x: 3.5d
+			y: 3.5d
 			subtitle: "4k RF/t "
-			dependencies: [
-				"592A4D0BDEB062DB"
-				"0D9ABDE851B5E722"
-			]
+			dependencies: ["0D9ABDE851B5E722"]
 			id: "4D8C40C07AF73B14"
 			tasks: [{
 				id: "2D9F1023E205DDAB"
@@ -1227,9 +1215,9 @@
 			}]
 		}
 		{
-			x: 8.5d
-			y: 4.0d
-			dependencies: ["592A4D0BDEB062DB"]
+			x: 10.0d
+			y: 0.5d
+			dependencies: ["7BB9213CBA0A5FCC"]
 			id: "33A907176391C423"
 			tasks: [{
 				id: "3957BF8D199A31BB"
@@ -1501,8 +1489,8 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 4.0d
+			x: 1.5d
+			y: 5.0d
 			dependencies: ["0D9ABDE851B5E722"]
 			id: "070F35D0E7EF8EAC"
 			tasks: [{
@@ -1512,8 +1500,9 @@
 			}]
 		}
 		{
-			x: 3.0d
-			y: 5.5d
+			x: 1.5d
+			y: 6.5d
+			description: ["The Induction Smelter can make tier 3 alloys, but can't smelt tier 3 metals directly."]
 			dependencies: ["070F35D0E7EF8EAC"]
 			id: "52CA3CCD2B27CB98"
 			tasks: [{
@@ -1781,8 +1770,8 @@
 		}
 		{
 			title: "自动制作！"
-			x: 7.0d
-			y: 3.0d
+			x: -0.5d
+			y: 3.5d
 			description: [
 				"您需要通过添加一个一定大小的存储盘来转换制作单元"
 				""
@@ -1836,8 +1825,9 @@
 			]
 		}
 		{
-			x: 10.0d
-			y: 3.0d
+			x: -2.5d
+			y: 4.5d
+			description: ["Can be used as a Tinkers Fuel"]
 			dependencies: ["627B714B402BEE67"]
 			id: "5380AA7BAC513908"
 			tasks: [{
@@ -1850,7 +1840,6 @@
 			x: 7.0d
 			y: 0.5d
 			description: ["您需要这些信息来找到挖掘机的位置"]
-			dependencies: ["043DFE88CE9F4625"]
 			progression_mode: "flexible"
 			min_required_tasks: 1
 			id: "51C7C9DE65FA0607"
