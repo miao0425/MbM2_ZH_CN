@@ -1,6 +1,7 @@
 {
-	"#ae2": "应用能源2 - Applied Energistics 2",
 	"block.ae2.sky_stone_tank": "硬化储罐",
+	"item.naturesaura.infused_iron": "灌注秘银锭",
+	"block.naturesaura.infused_iron_block": "灌注秘银块",
 
 	"#Extendedcrafting": "合成拓展 - Extended Crafting",
 	"block.extendedcrafting.redstone_ingot_block": "红石合金块",

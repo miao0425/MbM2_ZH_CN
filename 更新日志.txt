@@ -1,3 +1,285 @@
+20240729
+material: 'aetherium',
+ore_name: '天华',
+itemParts: ['ingot', 'nugget', 'dust', 'plate', 'gear', 'rod', 'plating'],
+blockParts: ['storage_block'],
+fluid: 'thick',
+
+material: 'vibranium',
+ore_name: '振金',
++ 'plate', 'gear', 'rod', 'interlocking_component', 'reinforced_plating', 'sheet', 'hull_panel', 'plating', 'bolt', 'wire', 'model_spool', 'model_wire_coil', 'model_dual_coil', 'model_part_bundle'
++ fluid
+
+material: 'uru',
+ore_name: '乌鲁',
++ 'plate', 'gear', 'rod', 'reinforced_plating', 'sheet', 'hull_panel', 'plating', 'bolt'/*, 'wire', 'model_spool', 'model_wire_coil', */
+
+material: 'draconium',
+ore_name: '龙',
++ 'plate', 'gear', 'rod', 'reinforced_plating', 'sheet', 'hull_panel', 'plating', 'bolt'/*, 'wire', 'model_spool', 'model_wire_coil', */
+
+material: 'chromium',
+ore_name: '铬',
++ 'ingot'
+
+material: 'aerospace_alloy',
+ore_name: '航空合金',
++ 'sheet'
+
+material: 'inconel',
+ore_name: '镍铬基合金',
++ 'hull_panel'
+
+material: 'adamantine_alloy',
+ore_name: '精金合金',
++ 'reinforced_plating', 'model_rocket_nose_cone', 'rocket_fin'
+
+material: 'tier_4_mechanical_alloy',
+ore_name: '4级机械合金',
++ 'ingot', 'nugget', 'dust', 'plate', 'wire', 'gear', 'interlocking_component', 'rod', 'model_robot_arm'
++ 'storage_block', 'cog_block',
++ fluid
+
+material: 'tier_2_electrical_alloy',
+ore_name: '2级电力合金',
++ 'ingot', 'nugget', 'dust', 'plate', 'wire', 'model_spool', 'model_wire_coil', 'sheet', 'model_dual_coil', 'model_part_bundle'
++ 'storage_block', 'coil'
++ fluid
+
+material: 'tier_3_magical_alloy',
+ore_name: '3级魔法合金',
++ 'ingot', 'nugget', 'dust', 'plate',                          'rod', 'ring', 'sprocket'
++ 'storage_block'
++ fluid
+
+
+material: 'tier_4_structural_alloy',
+ore_name: '4级结构合金',
++ 'ingot', 'nugget', 'dust', 'plate',            'rod', 'plating', 'reinforced_plating', 'hull_panel', 'bolt', 'sheet', 'component'
++ 'storage_block', 'casing', 'scaffolding', 'hull_casing', 'frame_box', 'sheetmetal'
++ fluid
+
+material: 'mana_diamond',
+ore_name: '魔力钻石',
++ dust
+
+material: 'terrasteel',
+ore_name: '泰拉钢',
++  'dust'
+
+material: 'oganesson',
+ore_name: '奥气',
++ 'ingot', 'dust'
+
+material: 'radon',
+ore_name: '氡',
++ 'ingot', 'dust'
+
+material: 'aerospace_alloy',
+ore_name: '航空合金',
++ 'sheet'
+
+
+20240627
+material: 'red_alloy',
+ore_name: '红石合金',
++ 'model_part_bundle',
+
+material: 'lunar_alloy',
+ore_name: '明月合金',
++ 'wire', 'model_spool'
+
+material: 'tier_1_electrical_alloy',
+ore_name: '1级电力合金',
++ 'model_part_bundle',
+
+material: 'tier_2_electrical_alloy',
+ore_name: '2级电力合金',
++ 'model_part_bundle',
+
+20240517
+material: 'infused_mithril',
+ore_name: '灌注秘银',
++ 'dust', 'bolt'
+
+material: 'tainted_gold',
+ore_name: '污染黄金',
++ 'bolt'
++ fluid
+
+material: 'sky_metal',
+ore_name: '天空金属',
++ 'dust', 'bolt'
++ fluid
+
+All Washed -> Pure  纯净
+
+20240506
+material: 'tin',
+ore_name: '锡',
++ 'plating'
+
+material: 'gold',
+ore_name: '金',
++ 'sheet'
+
+material: 'lead',
+ore_name: '铅',
++ 'plating'
+
+material: 'cobalt',
+ore_name: '钴',
++'bolt'
++, 'scaffolding', 'frame_box'
+
+material: 'nickel',
+ore_name: '镍',
++ 'plating'
+
+material: 'magnesium',
+ore_name: '镁',
+- 'gear', 'rod'
+
+material: 'steel',
+ore_name: '钢',
++ 'plating'
+
+material: 'cobalt_brass',
+ore_name: '钴黄铜',
++ 'plating'
+
+material: 'black_iron',
+ore_name: '黑铁',
++ 'dust', 'plate', 'plating'
++ fluid_id: 'kubejs:molten_black_iron'
+
+material: 'battery_alloy',
+ore_name: '能源合金',
++ 'ingot', 'nugget', 'dust', 'plate', 'plating'
++ 'storage_block'
++ fluid_id: 'kubejs:molten_battery_alloy'
+
+material: 'illuminated_menril',
+ore_name: '发光门瑞欧',
++ 'ingot', 'dust', 'nugget', 'plate', 'wire', 'plating'
++ 'storage_block'
++ fluid_id: 'kubejs:molten_illuminated_menril'
+
+material: 'fluix_steel',
+ore_name: '福鲁伊克斯钢',
+- 'scaffolding'
+
+material: 'lumium',
+ore_name: '流明',
++ 'plating'
+
+material: 'signalum',
+ore_name: '信素',
++ 'plating'
+
+material: 'crystalized_alloy',
+ore_name: '晶化合金',
++ 'ingot', 'dust', 'nugget', 'plate', 'wire', 'plating'
++ 'storage_block'
++ fluid_id: 'kubejs:molten_crystalized_alloy'
+
+material: 'tier_2_magical_alloy',
+ore_name: '2级魔法合金',
++ 'ingot', 'nugget', 'dust', 'rod', 'ring', 'sprocket', 'plate'
++ 'storage_block'
++ fluid_id: 'kubejs:molten_tier_2_magical_alloy'
+
+material: 'fluix',
+ore_name: '福鲁伊克斯',
++ fluid_id: 'kubejs:molten_fluix'
+
+20240307 修复_master_material_list
+material: 'titanium',
+ore_name: '钛',
++ 'sheet'
+
+// material: 'stellarite',
+// ore_name: '陨石'
+
+material: 'thorium',
+ore_name: '钍',
+type: 'base_metal', → type: 'rare_metal',
+tier: 2, → tier: 3,
+
+material: 'lithium',
+ore_name: '锂',
+tier: 5, → tier: 4,
+
+material: 'signalum',
+ore_name: '信素',
++ 'base_ingot', 'base_dust'
+
+material: 'enderium',
+ore_name: '末影',
++'base_ingot', 'base_dust'
+
+material: 'tier_1_structural_alloy',
+ore_name: '1级结构合金',
++ 'sheetmetal'
+
+material: 'tier_2_structural_alloy',
+ore_name: '2级结构合金',
++ 'sheetmetal'
+
+material: 'tier_3_structural_alloy',
+ore_name: '3级结构合金',
++ 'sheetmetal'
+
+
+20240307 0.7.1
+material: 'swift_alloy',
+ore_name: '迅金',
+tier: 3, → tier: 2,
+
+20240307 0.7.0 + 0.7.0a
+material: 'cadmium',
+ore_name: '镉',
++ 'ingot'
+
+material: 'pewter',
+ore_name: '白镴',
++ 'ingot', 'nugget', 'storage_block'
+
+material: 'duralumin',
+ore_name: '硬铝',
++ 'ingot'
+
+material: 'tier_1_magical_alloy',
+ore_name: '1级魔法合金',
++ 'plate'
+
+material: 'tier_1_structural_alloy',
+ore_name: '1级结构合金',
++ 'sheet', 'component',
+
+material: 'tier_2_structural_alloy',
+ore_name: '2级结构合金',
++ 'sheet', 'component',
+
+material: 'tier_3_structural_alloy',
+ore_name: '3级结构合金',
++ 'sheet', 'component',
+
+material: 'terrasteel',
+ore_name: '泰拉钢',
++ fluid_id: 'kubejs:molten_terrasteel',
+
+material: 'elementium',
+ore_name: '源质钢',
+fluid_id: 'kubejs:molten_elementium',
+
+- material: 'infused_iron',
+- ore_name: '灌注铁',
++ material: 'infused_mithril',
++ ore_name: '灌注秘银',
++ fluid_id: 'kubejs:molten_infused_mithril',
+
+
 20242222
 material: 'lumium',
 ore_name: '流明',

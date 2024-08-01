@@ -45,6 +45,9 @@ onEvent('rei.hide.items', event => {
 	event.hide(Item.of('ae2:facade').ignoreNBT())
 	event.hide(Item.of('ae2:wireless_terminal').ignoreNBT())
 
+	event.hide('forbidden_arcanus:test_tube')
+	event.hide('forbidden_arcanus:blood_test_tube')
+
 	let MBDAny = [
 		'multiblocked:bot_mana.any',
 		'multiblocked:item.any',
@@ -67,6 +70,10 @@ onEvent('rei.hide.items', event => {
 })
 
 onEvent('rei.add.items', event => {
+	event.add(Item.of('forbidden_arcanus:blood_test_tube', '{Blood:0}'))
+	event.add(Item.of('forbidden_arcanus:blood_test_tube', '{Blood:3000}'))
+	event.add(Item.of('tconstruct:modifier_crystal', '{modifier:"tconstruct:unbreakable"}'))
+
 	var addItems = [
 		'thermal:ruby',
 		'thermal:ruby_block',
@@ -79,7 +86,7 @@ onEvent('rei.add.items', event => {
 		'thermal:sapphire_dust',
 		'thermal:sapphire_gear',
 		'minecraft:structure_block',
-		'feruchemy:metal_mind',
+		//'feruchemy:metal_mind',
 	]
 
 	addItems.forEach(item => {
@@ -153,9 +160,7 @@ onEvent('rei.group', event => {
 		'reliquary:tipped_arrow',
 		'reliquary:mob_charm_fragment',
 		'reliquary:lingering_potion',
-		'mna:runescribing_recipe_paper',
-		'mna:manaweaving_pattern_recipe_paper',
-		'mna:thaumaturgic_link',
+		//'mna:runescribing_recipe_paper', 'mna:manaweaving_pattern_recipe_paper', 'mna:thaumaturgic_link',
 		'immersiveengineering:shader',
 		'tconstruct:repair_kit',
 		'tconstruct:pick_head',
@@ -188,36 +193,43 @@ onEvent('rei.group', event => {
 		'tconstruct:crossbow',
 		'tconstruct:longbow',
 		'sophisticatedstorage:chest',
+		'sophisticatedstorage:copper_chest',
 		'sophisticatedstorage:iron_chest',
 		'sophisticatedstorage:gold_chest',
 		'sophisticatedstorage:diamond_chest',
 		'sophisticatedstorage:netherite_chest',
 		'sophisticatedstorage:shulker_box',
+		'sophisticatedstorage:copper_shulker_box',
 		'sophisticatedstorage:iron_shulker_box',
 		'sophisticatedstorage:gold_shulker_box',
 		'sophisticatedstorage:diamond_shulker_box',
 		'sophisticatedstorage:netherite_shulker_box',
 		'sophisticatedstorage:barrel',
+		'sophisticatedstorage:copper_barrel',
 		'sophisticatedstorage:iron_barrel',
 		'sophisticatedstorage:gold_barrel',
 		'sophisticatedstorage:diamond_barrel',
 		'sophisticatedstorage:netherite_barrel',
 		'sophisticatedstorage:limited_barrel_1',
+		'sophisticatedstorage:limited_copper_barrel_1',
 		'sophisticatedstorage:limited_iron_barrel_1',
 		'sophisticatedstorage:limited_gold_barrel_1',
 		'sophisticatedstorage:limited_diamond_barrel_1',
 		'sophisticatedstorage:limited_netherite_barrel_1',
 		'sophisticatedstorage:limited_barrel_2',
+		'sophisticatedstorage:limited_copper_barrel_2',
 		'sophisticatedstorage:limited_iron_barrel_2',
 		'sophisticatedstorage:limited_gold_barrel_2',
 		'sophisticatedstorage:limited_diamond_barrel_2',
 		'sophisticatedstorage:limited_netherite_barrel_2',
 		'sophisticatedstorage:limited_barrel_3',
+		'sophisticatedstorage:limited_copper_barrel_3',
 		'sophisticatedstorage:limited_iron_barrel_3',
 		'sophisticatedstorage:limited_gold_barrel_3',
 		'sophisticatedstorage:limited_diamond_barrel_3',
 		'sophisticatedstorage:limited_netherite_barrel_3',
 		'sophisticatedstorage:limited_barrel_4',
+		'sophisticatedstorage:limited_copper_barrel_4',
 		'sophisticatedstorage:limited_iron_barrel_4',
 		'sophisticatedstorage:limited_gold_barrel_4',
 		'sophisticatedstorage:limited_diamond_barrel_4',
@@ -236,7 +248,13 @@ onEvent('rei.group', event => {
 		const { namespace, path } = Utils.id(item.id)
 		event.groupSameItem(`mbm2:rei_groups/${namespace}/${path}`, item.getName(), item)
 	})
+	event.groupSameItem(
+		`mbm2:rei_groups/microblocks`,
+		'微型方块',
+		'cb_microblock:microblock'
+	)
 
+	/*
 	event.groupItems(`mbm2:rei_groups/wickerwood_constructs`, '条缕木构造体部件', [
 		/mna:constructs.*_wickerwood/,
 	])
@@ -258,6 +276,22 @@ onEvent('rei.group', event => {
 	event.groupItems(`mbm2:rei_groups/obsidian_constructs`, '黑曜石构造体部件', [
 		/mna:constructs.*_obsidian/,
 	])
+	*/
+
+	/*
+	'cb_microblock:microblock', '{factory_id:0,mat:"minecraft:red_concrete",size:1}'
+	'cb_microblock:microblock', '{factory_id:0,mat:"minecraft:basalt//axis.y",size:2}',
+	'cb_microblock:microblock', '{factory_id:0,mat:"minecraft:jungle_log//axis.y",size:4}',
+	'cb_microblock:microblock', '{factory_id:1,mat:"minecraft:spruce_log//axis.y",size:1}',
+	'cb_microblock:microblock', '{factory_id:1,mat:"minecraft:brown_wool",size:2}',
+	'cb_microblock:microblock', '{factory_id:1,mat:"minecraft:orange_glazed_terracotta//facing.north",size:4}',
+	'cb_microblock:microblock', '{factory_id:3,mat:"minecraft:acacia_log//axis.y",size:1}',
+	'cb_microblock:microblock', '{factory_id:3,mat:"minecraft:cobblestone",size:2}',
+	'cb_microblock:microblock', '{factory_id:3,mat:"minecraft:red_sandstone",size:4}',
+	'cb_microblock:microblock', '{factory_id:2,mat:"minecraft:diorite",size:1}',
+	'cb_microblock:microblock', '{factory_id:2,mat:"minecraft:stripped_birch_log//axis.y",size:2}',
+	'cb_microblock:microblock', '{factory_id:2,mat:"minecraft:jungle_leaves//distance.7/persistent.false",size:4}',
+	*/
 
 	global.newMaterialParts.forEach(item => {
 		if (item.ore) {
@@ -341,6 +375,9 @@ onEvent('rei.remove.categories', event => {
 		'industrialforegoing:ore_washer',
 		'industrialforegoing:fermenter',
 		'industrialforegoing:ore_sieve',
+		'elementalcraft:purification',
+		'packagedauto:fluid_package_filling',
+		'packagedauto:fluid_package_contents'
 	]
 
 	badCategories.forEach(item => {
