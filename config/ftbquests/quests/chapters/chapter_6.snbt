@@ -66,6 +66,7 @@
 		{
 			x: 3.0d
 			y: -0.5d
+			shape: "gear"
 			dependencies: [
 				"13A76B63A6E8833D"
 				"6C3EBA1AD09FEE6C"
